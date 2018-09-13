@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39fa7122-c913-426a-bcd7-f81489830ac0" name="Default" comment="update">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resource/templates/Menu.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resource/templates/logged.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java" />
+    <list default="true" id="39fa7122-c913-426a-bcd7-f81489830ac0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resource/templates/save.html" afterPath="$PROJECT_DIR$/src/main/Resource/templates/save.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resource/templates/saved.html" afterPath="$PROJECT_DIR$/src/main/Resource/templates/saved.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/LoginController.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/User.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/User.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/SecurityConfig.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/SecurityConfig.class" />
@@ -540,6 +530,14 @@
       <option name="presentableId" value="Default" />
       <updated>1536701625207</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1536848160801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536848160801</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -556,7 +554,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55016184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
