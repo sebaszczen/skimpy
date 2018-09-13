@@ -7,6 +7,11 @@
 </head>
 <body>
 <h1>Logged</h1>
+<button type="submit" class="btn btn-success">
+    <a th:href="@{/login}" role="button" class="btn btn-danger">
+        Sign up
+    </a>
+</button>
 
 
 <table class="table">
@@ -19,6 +24,19 @@
     <td th:text="${user.login}"></td>
     <th bgcolor="#F1F8E0">Password: </th>
     <td th:text="${user.password}"></td>
+    <!--<td>-->
+    <!--<button type="submit" class="btn btn-success">-->
+        <!--<a th:href="@{user/delete_user/${user.id}}" class="btn btn-danger">Delete</a>-->
+    <!--</button>-->
+    <!--</td>-->
+    <td>
+        <button type="submit" class="btn btn-success">
+        <a th:href="@{/user/delete?id={id}(id=${user.id})}" role="button" class="btn btn-danger">
+            Delete
+        </a>
+        </button>
+    </td>
+
 </tr>
 </table>
 

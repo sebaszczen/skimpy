@@ -9,26 +9,24 @@
 <form th:action="@{/user/save}" th:object="${user}" method="post">
     <div class="col-xs-3">
         <div class="thumbnail">
-            Login:
+            Username:
             <input type="text" th:field="*{username}">
             <td th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></td>
         </div>
 
-        <div class="thumbnail" style="float:left;">
+        <div class="thumbnail">
             Login:
             <input type="text" th:field="*{login}">
             <td th:if="${#fields.hasErrors('login')}" th:errors="*{login}"></td>
         </div>
 
-        <div class="thumbnail" style="float:left;">
+        <div class="thumbnail">
             Password:
             <input type="text" th:field="*{password}">
             <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></td>
         </div>
 
-        <button type="submit" class="btn btn-success">Submit</button>
-
-        <button type="reset" class="btn btn-warning">Reset</button>
+        <button type="submit" class="btn btn-success">Save</button>
 
     </div>
 

@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService{
 
         userOptional.orElseThrow(() -> new UsernameNotFoundException("No user found with username " + s));
 
-        return (UserDetails) userOptional.get();
+        return userOptional.get();
     }
 
     @Override
@@ -40,5 +40,10 @@ public class UserServiceImpl implements UserService{
     public List<User> findAll() {
 
         return userRepo.findAll();
+    }
+
+    @Override
+    public void deleteUser(Long id) {
+        userRepo.delete(id);
     }
 }

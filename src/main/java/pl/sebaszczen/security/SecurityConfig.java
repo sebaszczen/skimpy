@@ -26,12 +26,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzan
     //umozliwia konfiguracje uslug szczegolow uzytkownika
     @Autowired
     public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
-//        auth
-//                .userDetailsService(userService)
-//                .passwordEncoder(passwordEncoder());
         auth
-                .inMemoryAuthentication()
-                .withUser("user").password("password").roles("USER");
+                .userDetailsService(userService)
+                .passwordEncoder(passwordEncoder());
+//        auth
+//                .inMemoryAuthentication()
+//                .withUser("user").password("password").roles("USER");
     }
 
     //duzo domyslnych ustawien spring security
@@ -44,7 +44,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzan
         http
                 .csrf().disable()
                 .authorizeRequests() //authorizeRequest() i anyRequest() ustawia konieczność uwierzytelniania wszystkich zadan http przychodzacych do aplikacji, rowniez ustawia Spring security aby prowadzil do formularza logowania
-                .antMatchers("/login").hasAnyAuthority("admin")
+                .antMatchers("/login").hasAnyAuthority()
                 .and()
                 .formLogin()
 // .loginPage("/login")
@@ -57,6 +57,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzan
     public AuthenticationSuccessHandler loginSuccessHandler() {
         //poniewaz AuthenticationSuccessHandler ma tylko jedna metode mozna uzyc lambda
         //parametry tej metody to:request,response,authentication
-        return (request, response, authentication) -> response.sendRedirect("user/logged");
+        return (request, response, authentication) -> response.sendRedirect("/logged");
     }
 }

@@ -37,14 +37,28 @@ public class LoginController {
         }
     }
 
+//    @RequestMapping(value = "user/delete_user/{id}", method = RequestMethod.GET)
+//    public String handleDeleteUser(Model model, @PathVariable Long personId) {
+//        userService.deleteUser(personId);
+//        System.out.println(personId);
+//        System.out.println("test");
+//        List<User> userList = userService.findAll();
+//        model.addAttribute("userList", userList);
+//        return "saved";
+//    }
+
+    @GetMapping(value = {"/delete"})
+    public String delete(Model model,@RequestParam Long id){
+        userService.deleteUser(id);
+        List<User> userList = userService.findAll();
+        model.addAttribute("userList", userList);
+        return "saved";
+    }
+
     @GetMapping("/saveform")
     public String saveUser(Model model) {
         model.addAttribute("user", new User());
         return "save";
     }
 
-    @GetMapping("/logged")
-    public String logged() {
-        return "logged";
-    }
 }
