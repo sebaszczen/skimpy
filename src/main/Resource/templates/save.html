@@ -15,6 +15,12 @@
         </div>
 
         <div class="thumbnail">
+            Email:
+            <input type="text" th:field="*{email}">
+            <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></td>
+        </div>
+
+        <div class="thumbnail">
             Login:
             <input type="text" th:field="*{login}">
             <td th:if="${#fields.hasErrors('login')}" th:errors="*{login}"></td>

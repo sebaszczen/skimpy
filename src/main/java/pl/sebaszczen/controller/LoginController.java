@@ -6,13 +6,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import pl.sebaszczen.domain.User;
 import pl.sebaszczen.services.UserService;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 @RequestMapping("/user")
@@ -25,7 +25,7 @@ public class LoginController {
     PasswordEncoder passwordEncoder;
 
     @PostMapping("/save")
-    public String doctorAddSubmit(Model model, @ModelAttribute @Valid User user, BindingResult bindingResult){
+    public String doctorAddSubmit(Model model, @ModelAttribute("user") @Valid User user, BindingResult bindingResult,Errors errors){
         if(bindingResult.hasErrors()){
             return "save";
         } else {
