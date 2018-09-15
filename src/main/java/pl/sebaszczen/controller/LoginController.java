@@ -1,6 +1,5 @@
 package pl.sebaszczen.controller;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -25,7 +24,7 @@ public class LoginController {
     PasswordEncoder passwordEncoder;
 
     @PostMapping("/save")
-    public String doctorAddSubmit(Model model, @ModelAttribute("user") @Valid User user, BindingResult bindingResult,Errors errors){
+    public String doctorAddSubmit(Model model, @ModelAttribute("user") @Valid User user, BindingResult bindingResult, Errors errors){
         if(bindingResult.hasErrors()){
             return "save";
         } else {
