@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 import java.util.Collection;
 
 @Entity
-@PasswordMatches(message = "Passwsdf")
+@PasswordMatches(message = "Passwords don't match")
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

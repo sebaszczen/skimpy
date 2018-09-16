@@ -8,7 +8,20 @@
 <head>
 <body>
 
+<div th:if="${error}">
+    <div class="alert alert-danger">
+        <span th:text="${error}"></span>
+    </div>
+</div>
+
 <form th:action="@{/user/save}" th:object="${user}" method="post">
+
+    <p class="error-message"
+       th:if="${#fields.hasGlobalErrors()}"
+       th:each="error : ${#fields.errors('global')}"
+       th:text="${error}" style="color:red;">Validation error</p>
+
+
     <div class="col-xs-3">
         <div class="thumbnail">
             Username:
@@ -38,6 +51,12 @@
             Confirm password:
             <input type="text" th:field="*{matchingPassword}">
             <td th:if="${#fields.hasErrors('matchingPassword')}" th:errors="*{matchingPassword}"></td>
+        </div>
+
+        <div th:if="${error}">
+            <div class="alert alert-danger">
+                <span th:text="${error}"></span>
+            </div>
         </div>
 
         <button type="submit" class="btn btn-success">Save</button>

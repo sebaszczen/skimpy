@@ -12,6 +12,7 @@ import pl.sebaszczen.services.UserService;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 @Controller
 @RequestMapping("/user")
@@ -24,8 +25,11 @@ public class LoginController {
     PasswordEncoder passwordEncoder;
 
     @PostMapping("/save")
-    public String doctorAddSubmit(Model model, @ModelAttribute("user") @Valid User user, BindingResult bindingResult, Errors errors){
-        if(bindingResult.hasErrors()){
+    public String doctorAddSubmit(Model model, @ModelAttribute("user") @Valid User user, BindingResult bindingResult, Errors errors) {
+//        if (errors.hasErrors()) {
+//                        bindingResult.rejectValue("password","message.regError", "The passwords doesn't  match!!");
+//        }
+        if (bindingResult.hasErrors()) {
             return "save";
         } else {
 //            user.setPassword(passwordEncoder.encode(user.getPassword()));
@@ -47,7 +51,7 @@ public class LoginController {
 //    }
 
     @GetMapping(value = {"/delete"})
-    public String delete(Model model,@RequestParam Long id){
+    public String delete(Model model, @RequestParam Long id) {
         userService.deleteUser(id);
         List<User> userList = userService.findAll();
         model.addAttribute("userList", userList);
