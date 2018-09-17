@@ -5,4 +5,6 @@ import pl.sebaszczen.domain.User;
 
 public interface UserRepo extends JpaRepository<User,Long> {
     java.util.Optional<User> findByUsername(String name);
+
+    User findByEmail(String email);
 }

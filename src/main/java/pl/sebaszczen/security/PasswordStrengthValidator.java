@@ -1,7 +1,6 @@
 package pl.sebaszczen.security;
 
 import org.passay.*;
-import pl.sebaszczen.domain.User;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

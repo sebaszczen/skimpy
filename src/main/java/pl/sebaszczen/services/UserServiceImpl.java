@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import pl.sebaszczen.domain.User;
+import pl.sebaszczen.domain.UserDto;
 import pl.sebaszczen.repository.UserRepo;
 
 import java.util.List;
@@ -31,8 +32,26 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void save(User user) {
-        userRepo.save(user);
+    public User save(UserDto userDto) throws EmailExistsException {
+
+        if (emailExist(userDto.getEmail())) {
+            throw new EmailExistsException(
+                    "There is an account with that email adress: "
+                            +  userDto.getEmail());
+        }
+        else {
+            User user = new User(userDto.getUsername(), userDto.getLogin(), passwordEncoder.encode(userDto.getPassword()), userDto.getEmail());
+            userRepo.save(user);
+            return user;
+        }
+    }
+
+    private boolean emailExist(String email) {
+        User user = findByEmail(email);
+        if (user != null) {
+            return true;
+        }
+        return false;
     }
 
     @Override
@@ -44,5 +63,10 @@ public class UserServiceImpl implements UserService{
     @Override
     public void deleteUser(Long id) {
         userRepo.delete(id);
+    }
+
+    @Override
+    public User findByEmail(String email) {
+        return userRepo.findByEmail(email);
     }
 }

@@ -8,11 +8,12 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import pl.sebaszczen.domain.User;
+import pl.sebaszczen.domain.UserDto;
+import pl.sebaszczen.services.EmailExistsException;
 import pl.sebaszczen.services.UserService;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 @Controller
 @RequestMapping("/user")
@@ -21,22 +22,33 @@ public class LoginController {
     @Autowired
     UserService userService;
 
-    @Autowired
-    PasswordEncoder passwordEncoder;
-
     @PostMapping("/save")
-    public String doctorAddSubmit(Model model, @ModelAttribute("user") @Valid User user, BindingResult bindingResult, Errors errors) {
-//        if (errors.hasErrors()) {
-//                        bindingResult.rejectValue("password","message.regError", "The passwords doesn't  match!!");
-//        }
+    public String doctorAddSubmit(Model model, @ModelAttribute("user") @Valid UserDto userDto, BindingResult bindingResult, Errors errors) {
         if (bindingResult.hasErrors()) {
             return "save";
-        } else {
-            userService.save(user);
+        }
+        if (createUserAccount(userDto)==null){
+//            bindingResult.rejectValue("email", "message.regError");
+            bindingResult.rejectValue("email", "message.regError","There is an account with that email address: "
+                    + userDto.getEmail());
+            return "save";
+        }
+
+        else {
             List<User> userList = userService.findAll();
             model.addAttribute("userList", userList);
             return "saved";
         }
+    }
+
+    private User createUserAccount(UserDto accountDto) {
+        User registered = null;
+        try {
+            registered = userService.save(accountDto);
+        } catch (EmailExistsException e) {
+            return null;
+        }
+        return registered;
     }
 
 //    @RequestMapping(value = "user/delete_user/{id}", method = RequestMethod.GET)
@@ -59,7 +71,7 @@ public class LoginController {
 
     @GetMapping("/saveform")
     public String saveUser(Model model) {
-        model.addAttribute("user", new User());
+        model.addAttribute("user", new UserDto());
         return "save";
     }
 
