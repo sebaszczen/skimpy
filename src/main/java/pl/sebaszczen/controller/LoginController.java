@@ -32,7 +32,6 @@ public class LoginController {
         if (bindingResult.hasErrors()) {
             return "save";
         } else {
-//            user.setPassword(passwordEncoder.encode(user.getPassword()));
             userService.save(user);
             List<User> userList = userService.findAll();
             model.addAttribute("userList", userList);

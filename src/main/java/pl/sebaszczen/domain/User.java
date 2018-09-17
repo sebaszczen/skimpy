@@ -1,10 +1,10 @@
 package pl.sebaszczen.domain;
 
-import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import pl.sebaszczen.security.PasswordMatches;
+import pl.sebaszczen.security.PasswordStrength;
 import pl.sebaszczen.security.ValidEmail;
 
 import javax.persistence.Entity;
@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 import java.util.Collection;
 
 @Entity
-@PasswordMatches(message = "Passwords don't match")
+@PasswordMatches
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -29,6 +29,7 @@ public class User implements UserDetails {
     private String login;
     @NotNull
     @NotEmpty
+    @PasswordStrength
     private String password;
     @NotNull
     @NotEmpty
