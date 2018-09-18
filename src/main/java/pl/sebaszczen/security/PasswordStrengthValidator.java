@@ -1,5 +1,6 @@
 package pl.sebaszczen.security;
 
+
 import org.passay.*;
 
 import javax.validation.ConstraintValidator;

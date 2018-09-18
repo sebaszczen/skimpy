@@ -6,6 +6,7 @@
 
 
 <head>
+</head>
 <body>
 
 <div th:if="${error}">
@@ -25,31 +26,31 @@
     <div class="col-xs-3">
         <div class="thumbnail">
             Username:
-            <input type="text" th:field="*{username}">
+            <input type="text" th:field="*{username}"/>
             <td th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></td>
         </div>
 
         <div class="thumbnail">
             Email:
-            <input type="text" th:field="*{email}">
+            <input type="text" th:field="*{email}"/>
             <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></td>
         </div>
 
         <div class="thumbnail">
             Login:
-            <input type="text" th:field="*{login}">
+            <input type="text" th:field="*{login}"/>
             <td th:if="${#fields.hasErrors('login')}" th:errors="*{login}"></td>
         </div>
 
         <div class="thumbnail">
             Password:
-            <input type="text" th:field="*{password}">
+            <input type="text" th:field="*{password}"/>
             <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></td>
         </div>
 
         <div class="thumbnail">
             Confirm password:
-            <input type="text" th:field="*{matchingPassword}">
+            <input type="text" th:field="*{matchingPassword}"/>
             <td th:if="${#fields.hasErrors('matchingPassword')}" th:errors="*{matchingPassword}"></td>
         </div>
 

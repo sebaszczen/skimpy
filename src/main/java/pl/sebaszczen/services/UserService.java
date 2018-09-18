@@ -15,4 +15,5 @@ public interface UserService extends UserDetailsService {
 
     User findByEmail(String email);
 
+    void updatePassword(String password, Long userId);
 }
