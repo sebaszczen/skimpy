@@ -1,24 +1,20 @@
 package pl.sebaszczen.domain;
 
 import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
 import pl.sebaszczen.security.PasswordMatches;
 import pl.sebaszczen.security.PasswordStrength;
 import pl.sebaszczen.security.ValidEmail;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.NotNull;
-import java.util.Collection;
 
 @PasswordMatches
 public class UserDto {
     @NotNull
     @NotEmpty
     private String username;
+    @NotEmpty
+    private String lastName;
     @NotNull
     @NotEmpty
     private String login;
@@ -33,6 +29,25 @@ public class UserDto {
     @NotEmpty
     @ValidEmail
     private String email;
+
+    @AssertTrue
+    private Boolean terms;
+
+    public Boolean getTerms() {
+        return terms;
+    }
+
+    public void setTerms(Boolean terms) {
+        this.terms = terms;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
     public String getMatchingPassword() {
         return matchingPassword;

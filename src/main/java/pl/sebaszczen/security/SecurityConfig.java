@@ -47,7 +47,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzan
                 .antMatchers("/login").hasAnyAuthority()
                 .and()
                 .formLogin()
-// .loginPage("/login")
+ .loginPage("/login")
                 .permitAll()
                 .successHandler(loginSuccessHandler())
                 //po logowaniu sa dwa wyjscia-udalo sie zalogowac lub nie tutaj nastepuje obsluga tych dwoch wydarzen

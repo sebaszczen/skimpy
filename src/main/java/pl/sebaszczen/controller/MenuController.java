@@ -14,10 +14,15 @@ public class MenuController {
         return "menu";
     }
 
-    @GetMapping("/register")
+    @GetMapping("/registration")
     public String saveUser(Model model) {
         model.addAttribute("user", new UserDto());
         return "save";
+    }
+
+    @GetMapping("/login")
+    public String login(Model model) {
+        return "login";
     }
 
     @GetMapping("/logged")
