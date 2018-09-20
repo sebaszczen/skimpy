@@ -44,7 +44,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzan
         http
                 .csrf().disable()
                 .authorizeRequests() //authorizeRequest() i anyRequest() ustawia konieczność uwierzytelniania wszystkich zadan http przychodzacych do aplikacji, rowniez ustawia Spring security aby prowadzil do formularza logowania
-                .antMatchers("/login").hasAnyAuthority()
+                .antMatchers("/sdf").authenticated()
                 .and()
                 .formLogin()
  .loginPage("/login")

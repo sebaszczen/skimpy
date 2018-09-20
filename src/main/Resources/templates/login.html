@@ -18,9 +18,21 @@
                 <div class="panel-body">
                     <div class="text-center">
                         <h3><i class="glyphicon glyphicon-lock" style="font-size:2em;"></i></h3>
+
                         <h2 class="text-center">Login</h2>
                         <div class="panel-body">
 
+                            <div th:if="${param.registerSuccess}">
+                                <div class="alert alert-info">
+                                    You've successfully registered! Go to email and activate your account!
+                                </div>
+                            </div>
+                            <div th:if="${param.activateSuccess}">
+                                <div class="alert alert-info">
+                                    You've successfully activated an account!
+                                    Login in and enjoy!
+                                </div>
+                            </div>
                             <div th:if="${param.error}">
                                 <div class="alert alert-danger">
                                     Invalid username or password.
@@ -37,7 +49,7 @@
                                 </div>
                             </div>
 
-                            <form th:action="@{/login}" method="post">
+                            <form th:action="@{/login }" th:object="${user}" method="post">
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon">@</span>

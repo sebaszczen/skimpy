@@ -17,6 +17,7 @@ public class User implements UserDetails {
     private String login;
     private String password;
     private String email;
+    private boolean active = false;
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
             name = "users_roles",
@@ -42,6 +43,14 @@ public class User implements UserDetails {
         this.password = password;
         this.email = email;
         this.roles = roles;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 
     public String getEmail() {
@@ -81,7 +90,7 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return isActive();
     }
 
     public void setUsername(String username) {
