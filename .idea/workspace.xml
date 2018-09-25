@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39fa7122-c913-426a-bcd7-f81489830ac0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/templates/email/activate-account-email-template.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/activateAccount/ActivateAccountController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/activateAccount/AccountActivateToken.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/AccountActivateTokenRepository.java" />
+    <list default="true" id="39fa7122-c913-426a-bcd7-f81489830ac0" name="Default" comment="activate account">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/controllerTest/UserRegistrationTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/Resources/application.properties" afterPath="$PROJECT_DIR$/src/main/Resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/Resources/templates/login.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/User.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/User.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/SecurityConfig.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/SecurityConfig.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,86 +17,177 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ActivateAccountController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/activateAccount/ActivateAccountController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-79">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-              <folding>
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-              <folding>
-                <element signature="e#1402#1403#0" expanded="true" />
-                <element signature="e#1431#1432#0" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1512#1513#0" expanded="true" />
-                <element signature="e#2134#2135#0" expanded="true" />
-                <element signature="e#2167#2168#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.37594554">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="ActivateAccountController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/activateAccount/ActivateAccountController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserDto.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="69">
+                  <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/App.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/LoginController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-298">
+                  <caret line="52" column="38" lean-forward="false" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#477#478#0" expanded="true" />
+                    <element signature="e#513#514#0" expanded="true" />
+                    <element signature="e#569#570#0" expanded="true" />
+                    <element signature="e#598#599#0" expanded="true" />
+                    <element signature="e#809#810#0" expanded="true" />
+                    <element signature="e#839#840#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/Resources/application.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="skimpy.iml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/skimpy.iml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserRegistrationTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/controllerTest/UserRegistrationTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="46">
+                  <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#1402#1403#0" expanded="true" />
+                    <element signature="e#1431#1432#0" expanded="true" />
+                    <element signature="e#1476#1477#0" expanded="true" />
+                    <element signature="e#1512#1513#0" expanded="true" />
+                    <element signature="e#2134#2135#0" expanded="true" />
+                    <element signature="e#2167#2168#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="UserRegistrationTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/controllerTest/UserRegistrationTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="328">
+                  <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="145">
+                  <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserDto.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="69">
+                  <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="TestNG Test Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PasswordForgotController</find>
-      <find>bea</find>
       <find>mem</find>
       <find>signature</find>
       <find>email/email-template</find>
@@ -135,6 +216,8 @@
       <find>You've requested a password re</find>
       <find>resetUrl</find>
       <find>activate-account</find>
+      <find>registration?success</find>
+      <find>registration</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Nowy folder\skimpyy\src\main\java\pl\sebaszczen\domain</dir>
@@ -156,9 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Resource/templates/save.html" />
-        <option value="$PROJECT_DIR$/src/main/Resource/invalid-password-list" />
-        <option value="$PROJECT_DIR$/src/main/Resources/invalid-password-list.txt" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/PasswordMatches.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/PasswordsTRENGTH.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/PasswordStrength.java" />
@@ -172,7 +252,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/PasswordForgotController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/resetPAssword/EmailService.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/templates/email.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java" />
@@ -207,6 +286,10 @@
         <option value="$PROJECT_DIR$/src/main/Resources/templates/email/activate-account-email-template.html" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sebaszczen/controllerTest/UserRegistrationTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/controllerTest/UserRegistrationTest.java" />
       </list>
     </option>
   </component>
@@ -246,6 +329,11 @@
             <id>RegExp</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -265,19 +353,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -449,28 +524,103 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="email" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="controllerTest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
+              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../reset-password/pom.xml" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/PasswordMatches.java" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pl.sebaszczen.services" />
-      <recent name="pl.sebaszczen.security" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.sebaszczen.domain" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Nowy folder\skimpyy\src\test\java\pl\sebaszczen\controllerTest" />
+      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates" />
+      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates\reset-password" />
+      <recent name="C:\Nowy folder\skimpy\src\main\Resource" />
+      <recent name="C:\Nowy folder\skimpy\src\main\java\templates" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.sebaszczen.domain" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -485,11 +635,9 @@
       <recent name="pl.sebaszczen.security" />
       <recent name="pl.sebaszczen.services" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates" />
-      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates\reset-password" />
-      <recent name="C:\Nowy folder\skimpy\src\main\Resource" />
-      <recent name="C:\Nowy folder\skimpy\src\main\java\templates" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.sebaszczen.services" />
+      <recent name="pl.sebaszczen.security" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -504,7 +652,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -544,6 +692,56 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="UserRegistrationTest.registerSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="pl.sebaszczen.domain.controllerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="skimpy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pl.sebaszczen.domain.controllerTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.sebaszczen.domain.controllerTest.UserRegistrationTest" />
+      <option name="METHOD_NAME" value="registerSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="UserRegistrationTest.submitWeakPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="pl.sebaszczen.domain.controllerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="skimpy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pl.sebaszczen.domain.controllerTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.sebaszczen.domain.controllerTest.UserRegistrationTest" />
+      <option name="METHOD_NAME" value="submitWeakPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -605,9 +803,16 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.App" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserRegistrationTest.submitWeakPassword" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserRegistrationTest.registerSuccess" />
+    </list>
     <recent_temporary>
-      <list size="1">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Application.App" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserRegistrationTest.registerSuccess" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserRegistrationTest.submitWeakPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -737,8 +942,47 @@
       <option name="project" value="LOCAL" />
       <updated>1537370845362</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="activate account">
+      <created>1537452890861</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1537452890861</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 15h 36m 52s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 15h 39m 41s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 15h 41m 21s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 15h 42m 37s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 16h 22m 28s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 16h 24m 02s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 16h 48m 25s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 16h 50m 13s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 16h 58m 16s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRegistrationTest_registerSuccess - 2018.09.25 at 16h 59m 34s.xml">
+      <configuration name="UserRegistrationTest.registerSuccess" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -762,19 +1006,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3171521" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5614887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27912253" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2934947" sideWeight="0.5" order="5" side_tool="true" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64239484" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5388349" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40614888" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -816,58 +1060,47 @@
     <MESSAGE value="email type validation" />
     <MESSAGE value="email strength and match encrypt error" />
     <MESSAGE value="password reset" />
-    <option name="LAST_COMMIT_MESSAGE" value="password reset" />
+    <MESSAGE value="activate account" />
+    <option name="LAST_COMMIT_MESSAGE" value="activate account" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordReset/PasswordResetController.java</url>
-          <line>23</line>
-          <properties field="tokenRepository" class="pl.sebaszczen.controller.passwordReset.PasswordResetController" />
-          <option name="timeStamp" value="54" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/controllerTest/UserRegistrationTest.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordReset/PasswordForgotController.java</url>
-          <line>38</line>
+          <url>file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/controllerTest/UserRegistrationTest.java</url>
+          <line>57</line>
           <properties />
-          <option name="timeStamp" value="61" />
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java</url>
-          <line>46</line>
+          <url>file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/controllerTest/UserRegistrationTest.java</url>
+          <line>55</line>
           <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="63" />
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java</url>
-          <line>49</line>
+          <line>29</line>
           <properties />
-          <option name="timeStamp" value="64" />
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/activateAccount/ActivateAccountController.java</url>
-          <line>38</line>
+          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java</url>
+          <line>30</line>
           <properties />
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/activateAccount/ActivateAccountController.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="66" />
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="67" />
+      <option name="time" value="77" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -876,21 +1109,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/PasswordStrength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -920,26 +1138,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skimpy.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/email.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="85" column="4" lean-forward="false" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,24 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="74" column="65" lean-forward="false" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="e#794#795#0" expanded="false" />
-            <element signature="e#822#823#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#899#900#0" expanded="false" />
-            <element signature="e#934#935#0" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1053#1054#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,7 +1242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1073,7 +1256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="83" lean-forward="false" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,10 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding>
-            <element signature="e#261#262#0" expanded="false" />
-            <element signature="e#288#289#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,7 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,7 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,7 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1124,18 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,7 +1316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,7 +1323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="26" column="69" lean-forward="false" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,15 +1338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="75" column="54" lean-forward="true" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,7 +1345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-122">
           <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,7 +1352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,7 +1359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,7 +1374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1234,29 +1381,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding>
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#2167#2168#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="60">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="e#477#478#0" expanded="true" />
             <element signature="e#513#514#0" expanded="true" />
@@ -1268,26 +1415,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+        <state relative-caret-position="51">
+          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/activateAccount/ActivateAccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        <state relative-caret-position="68">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="-298">
+          <caret line="52" column="38" lean-forward="false" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skimpy.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/controllerTest/UserRegistrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding />
         </state>
       </provider>
