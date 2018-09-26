@@ -1,13 +1,20 @@
-package pl.sebaszczen.domain.controllerTest;
+package pl.sebaszczen.controllerTest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import pl.sebaszczen.domain.*;
+import pl.sebaszczen.repository.AccountActivateTokenRepository;
+import pl.sebaszczen.services.EmailExistsException;
+import pl.sebaszczen.services.UserService;
+import pl.sebaszczen.services.resetPAssword.EmailService;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
@@ -22,9 +29,19 @@ public class UserRegistrationTest {
     @Autowired
     private MockMvc mockMvc;
 
+    @MockBean
+    EmailService emailService;
+
+    @Autowired
+    UserService userService;
+    @Autowired
+    MockUserDto mockUserDto;
 
     @Test
     public void submitWeakPassword() throws Exception {
+//        Mockito.when(accountActivateTokenRepository.save(mockToken.accountActivateTokens().get(0)))
+//                .then()
+
         this.mockMvc.perform(
                 post("/user/save")
                         .param("username", "s")
@@ -35,6 +52,7 @@ public class UserRegistrationTest {
                         .param("email", "email")
                         .param("terms", "on")
         )
+                .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(model().hasErrors()).
                 andExpect(model().attributeHasFieldErrors("user","password"))
                 .andExpect(status().isOk());
@@ -52,9 +70,15 @@ public class UserRegistrationTest {
                         .param("email", "email@gmail.com")
                         .param("terms", "on")
         )
-                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.status().is(302))
                 .andExpect(model().hasNoErrors())
                 .andExpect(redirectedUrl("/login?registerSuccess"))
                 .andExpect(status().is3xxRedirection());
+    }
+
+    @Test
+    public void failRegisterUserWithExistingEmail() throws EmailExistsException {
+        UserDto userDto=mockUserDto.userDtoList().get(0);
+        userService.save(userDto);
     }
 }

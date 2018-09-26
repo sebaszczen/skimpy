@@ -33,6 +33,16 @@ public class UserDto {
     @AssertTrue
     private Boolean terms;
 
+    public UserDto(String username, String lastName, String login, String password, String matchingPassword, String email, Boolean terms) {
+        this.username = username;
+        this.lastName = lastName;
+        this.login = login;
+        this.password = password;
+        this.matchingPassword = matchingPassword;
+        this.email = email;
+        this.terms = terms;
+    }
+
     public Boolean getTerms() {
         return terms;
     }

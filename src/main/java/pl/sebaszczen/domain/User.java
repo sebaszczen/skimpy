@@ -45,6 +45,15 @@ public class User implements UserDetails {
         this.roles = roles;
     }
 
+    public User(Long id, String username, String login, String password, String email, boolean active) {
+        this.id = id;
+        this.username = username;
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.active = active;
+    }
+
     public boolean isActive() {
         return active;
     }
