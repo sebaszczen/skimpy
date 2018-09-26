@@ -33,17 +33,17 @@ public class UserDto {
     @AssertTrue
     private Boolean terms;
 
-    public UserDto() {
+    public UserDto(final Builder builder) {
+        this.username=builder.username;
+        this.lastName = builder.lastName;
+        this.login = builder.login;
+        this.password = builder.password;
+        this.matchingPassword = builder.matchingPassword;
+        this.email = builder.email;
+        this.terms = builder.terms;
     }
 
-    public UserDto(String username, String lastName, String login, String password, String matchingPassword, String email, Boolean terms) {
-        this.username = username;
-        this.lastName = lastName;
-        this.login = login;
-        this.password = password;
-        this.matchingPassword = matchingPassword;
-        this.email = email;
-        this.terms = terms;
+    public UserDto() {
     }
 
     public Boolean getTerms() {
@@ -100,5 +100,53 @@ public class UserDto {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public static class Builder{
+        private String username;
+        private String lastName;
+        private String login;
+        private String password;
+        private String matchingPassword;
+        private String email;
+        private Boolean terms;
+
+        public Builder setUsername(String username) {
+            this.username = username;
+            return this;
+        }
+
+        public Builder setLastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        public Builder setLogin(String login) {
+            this.login = login;
+            return this;
+        }
+
+        public Builder setPassword(String password) {
+            this.password = password;
+            return this;
+        }
+
+        public Builder setMatchingPassword(String matchingPassword) {
+            this.matchingPassword = matchingPassword;
+            return this;
+        }
+
+        public Builder setEmail(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public Builder setTerms(Boolean terms) {
+            this.terms = terms;
+            return this;
+        }
+        public UserDto build(){
+            return new UserDto(this);
+        }
     }
 }

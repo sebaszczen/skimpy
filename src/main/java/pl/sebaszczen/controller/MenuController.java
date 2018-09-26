@@ -13,7 +13,7 @@ public class MenuController {
 
     @ModelAttribute("user")
     public UserDto UserDto() {
-        return new UserDto();
+        return new UserDto.Builder().build();
     }
 
     @GetMapping("/menu")
@@ -23,7 +23,7 @@ public class MenuController {
 
     @GetMapping("/registration")
     public String saveUser(Model model) {
-        model.addAttribute("user", new UserDto());
+        model.addAttribute("user", new UserDto.Builder().build());
         return "save";
     }
 

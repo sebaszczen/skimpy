@@ -21,7 +21,6 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping("/activate-account")
 public class ActivateAccountController {
-
     @Autowired private UserService userService;
     @Autowired private AccountActivateTokenRepository accountActivateTokenRepository;
     @Autowired private BCryptPasswordEncoder passwordEncoder;
@@ -36,7 +35,9 @@ public class ActivateAccountController {
         }
         else {
             User user = accountActivateToken.getUser();
-            user.setActive(true);
+//            user.setActive(true);
+            userService.updateIsActive(true,user.getId());
+
         }
 
         return "redirect:/login?activateSuccess";

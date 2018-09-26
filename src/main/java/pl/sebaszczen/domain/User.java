@@ -30,29 +30,21 @@ public class User implements UserDetails {
     public User() {
     }
 
-    public User(String username, String login, String password, String email) {
-        this.username = username;
-        this.login = login;
-        this.password = password;
+    private User(final Builder builder) {
+        this.email=builder.email;
+        this.login=builder.login;
+        this.password = builder.password;
+        this.email = builder.email;
+        this.active = builder.active;
+    }
+
+    public User(String username, String login, String encode, String email) {
+        this.username=username;
+        this.login=login;
+        this.password = encode;
         this.email = email;
     }
 
-    public User(String username, String login, String password, String email, Collection<Role> roles) {
-        this.username = username;
-        this.login = login;
-        this.password = password;
-        this.email = email;
-        this.roles = roles;
-    }
-
-    public User(Long id, String username, String login, String password, String email, boolean active) {
-        this.id = id;
-        this.username = username;
-        this.login = login;
-        this.password = password;
-        this.email = email;
-        this.active = active;
-    }
 
     public boolean isActive() {
         return active;
@@ -125,5 +117,55 @@ public class User implements UserDetails {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public static class Builder{
+        private Long id;
+
+        private String username;
+        private String login;
+        private String password;
+        private String email;
+        private boolean active = false;
+        private Collection<Role> roles;
+
+        public Builder setId(Long id) {
+            this.id = id;
+            return this;
+        }
+
+        public Builder setUsername(String username) {
+            this.username = username;
+            return this;
+        }
+
+        public Builder setLogin(String login) {
+            this.login = login;
+            return this;
+        }
+
+        public Builder setPassword(String password) {
+            this.password = password;
+            return this;
+        }
+
+        public Builder setEmail(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public Builder setActive(boolean active) {
+            this.active = active;
+            return this;
+        }
+
+        public Builder setRoles(Collection<Role> roles) {
+            this.roles = roles;
+            return this;
+        }
+
+        public User build() {
+            return new User(this);
+        }
     }
 }

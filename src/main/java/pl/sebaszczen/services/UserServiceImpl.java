@@ -74,4 +74,11 @@ public class UserServiceImpl implements UserService{
     public void updatePassword(String password, Long userId) {
         userRepo.updatePassword(password, userId);
     }
+
+    @Override
+    public void updateIsActive(boolean isActive, Long userId) {
+        User user = userRepo.findOne(userId);
+        user.setActive(isActive);
+        userRepo.save(user);
+    }
 }

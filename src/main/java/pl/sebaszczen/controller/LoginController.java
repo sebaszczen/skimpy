@@ -108,7 +108,7 @@ public class LoginController {
 
     @GetMapping("/saveform")
     public String saveUser(Model model) {
-        model.addAttribute("user", new UserDto());
+        model.addAttribute("user", new UserDto.Builder().build());
         return "save";
     }
 
