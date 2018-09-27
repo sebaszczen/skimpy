@@ -1,11 +1,13 @@
 package pl.sebaszczen.domain;
 
+import org.springframework.stereotype.Service;
 import pl.sebaszczen.domain.resetPassword.Mail;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class MockMail {
 
     public List<Mail> mailList(){

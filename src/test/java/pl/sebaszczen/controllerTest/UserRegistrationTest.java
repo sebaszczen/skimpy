@@ -28,10 +28,10 @@ public class UserRegistrationTest {
 
     @Autowired
     private MockMvc mockMvc;
-
+//
     @MockBean
     EmailService emailService;
-
+//
     @Autowired
     UserService userService;
     @Autowired
