@@ -1,8 +1,7 @@
 package pl.sebaszczen.domain.resetPassword;
 
 import org.hibernate.validator.constraints.NotEmpty;
-import pl.sebaszczen.security.PasswordMatches;
-import pl.sebaszczen.security.PasswordResetMatches;
+import pl.sebaszczen.security.validation.PasswordResetMatches;
 
 @PasswordResetMatches
 public class PasswordResetDto {

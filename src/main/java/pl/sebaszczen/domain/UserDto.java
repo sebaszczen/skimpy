@@ -1,9 +1,10 @@
 package pl.sebaszczen.domain;
 
 import org.hibernate.validator.constraints.NotEmpty;
-import pl.sebaszczen.security.PasswordMatches;
-import pl.sebaszczen.security.PasswordStrength;
-import pl.sebaszczen.security.ValidEmail;
+import pl.sebaszczen.security.validation.LoginExist;
+import pl.sebaszczen.security.validation.PasswordMatches;
+import pl.sebaszczen.security.validation.PasswordStrength;
+import pl.sebaszczen.security.validation.ValidEmail;
 
 import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.NotNull;
@@ -17,6 +18,7 @@ public class UserDto {
     private String lastName;
     @NotNull
     @NotEmpty
+    @LoginExist
     private String login;
     @NotNull
     @NotEmpty

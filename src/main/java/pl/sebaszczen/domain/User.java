@@ -3,6 +3,7 @@ package pl.sebaszczen.domain;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import pl.sebaszczen.security.validation.ValidEmail;
 
 import javax.persistence.*;
 import java.util.Collection;
@@ -46,7 +47,8 @@ public class User implements UserDetails {
     }
 
 
-    public boolean isActive() {
+    public boolean isActive(){
+
         return active;
     }
 

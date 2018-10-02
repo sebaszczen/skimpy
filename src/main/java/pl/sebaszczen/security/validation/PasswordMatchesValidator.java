@@ -1,6 +1,5 @@
-package pl.sebaszczen.security;
+package pl.sebaszczen.security.validation;
 
-import pl.sebaszczen.domain.User;
 import pl.sebaszczen.domain.UserDto;
 
 import javax.validation.ConstraintValidator;

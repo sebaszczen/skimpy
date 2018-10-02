@@ -18,4 +18,6 @@ public interface UserService extends UserDetailsService {
     void updatePassword(String password, Long userId);
 
     void updateIsActive(boolean isActive,Long userId);
+
+    User findByLogin(String login);
 }

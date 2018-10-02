@@ -1,4 +1,4 @@
-package pl.sebaszczen.security;
+package pl.sebaszczen.security.validation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

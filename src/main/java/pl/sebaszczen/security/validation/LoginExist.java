@@ -1,4 +1,4 @@
-package pl.sebaszczen.security;
+package pl.sebaszczen.security.validation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
@@ -9,10 +9,10 @@ import java.lang.annotation.RetentionPolicy;
 
 @java.lang.annotation.Target({ElementType.TYPE, ElementType.FIELD, ElementType.ANNOTATION_TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = EmailValidator.class)
+@Constraint(validatedBy = LoginValidator.class)
 @Documented
-public @interface ValidEmail {
-    String message() default "Invalid email";
+public @interface LoginExist {
+    String message() default "That login is already used by someone else. Please choose new one.";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }

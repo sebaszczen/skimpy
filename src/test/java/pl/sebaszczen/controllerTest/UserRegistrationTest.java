@@ -11,7 +11,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import pl.sebaszczen.domain.*;
-import pl.sebaszczen.repository.AccountActivateTokenRepository;
 import pl.sebaszczen.services.EmailExistsException;
 import pl.sebaszczen.services.UserService;
 import pl.sebaszczen.services.resetPAssword.EmailService;

@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import pl.sebaszczen.services.UserService;
 
@@ -47,14 +48,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzan
                 .antMatchers("/sdf").authenticated()
                 .and()
                 .formLogin()
- .loginPage("/login")
+                .loginPage("/login")
                 .permitAll()
-                .successHandler(loginSuccessHandler())
+                .successHandler(loginSuccessHandler()).failureHandler(authenticationFailureHandler())
                 //po logowaniu sa dwa wyjscia-udalo sie zalogowac lub nie tutaj nastepuje obsluga tych dwoch wydarzen
                 .and().logout().permitAll(); // bardzo wazny element potrzebny do dzialania logout
     }
 
-    public AuthenticationSuccessHandler loginSuccessHandler() {
+    private AuthenticationFailureHandler authenticationFailureHandler() {
+        return (request, response, authentication) -> {
+            if (authentication.getMessage().equals("User is disabled")) {
+                response.sendRedirect("/login?disabled");
+            }
+            else {
+                response.sendRedirect("/login?error");
+            }
+        };
+//                request.getUserPrincipal().getName();  response.sendRedirect( "/logged");
+    }
+
+    private AuthenticationSuccessHandler loginSuccessHandler() {
         //poniewaz AuthenticationSuccessHandler ma tylko jedna metode mozna uzyc lambda
         //parametry tej metody to:request,response,authentication
         return (request, response, authentication) -> response.sendRedirect("/logged");

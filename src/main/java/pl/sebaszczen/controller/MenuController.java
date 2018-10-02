@@ -29,11 +29,12 @@ public class MenuController {
 
     @GetMapping("/login")
     public String login() {
+
         return "login";
     }
 
     @GetMapping("/logged")
     public String getLogin(Model model) {
-        return "logged";
+        return "index";
     }
 }

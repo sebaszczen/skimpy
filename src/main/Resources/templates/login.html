@@ -22,6 +22,11 @@
                         <h2 class="text-center">Login</h2>
                         <div class="panel-body">
 
+                            <p class="error-message"
+                               th:if="${#fields.hasGlobalErrors()}"
+                               th:each="error : ${#fields.errors('global')}"
+                               th:text="${error}">Validation error</p>
+
                             <div th:if="${param.registerSuccess}">
                                 <div class="alert alert-info">
                                     You've successfully registered! Go to email and activate your account!
@@ -36,6 +41,11 @@
                             <div th:if="${param.error}">
                                 <div class="alert alert-danger">
                                     Invalid username or password.
+                                </div>
+                            </div>
+                            <div th:if="${param.disabled}">
+                                <div class="alert alert-danger">
+                                    Activate your account
                                 </div>
                             </div>
                             <div th:if="${param.logout}">

@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
 
-        Optional<User> userOptional = userRepo.findByUsername(s);
+        Optional<User> userOptional = Optional.ofNullable(findByLogin(s));
 
         userOptional.orElseThrow(() -> new UsernameNotFoundException("No user found with username " + s));
 
@@ -46,12 +46,14 @@ public class UserServiceImpl implements UserService{
         }
     }
 
+    private boolean loginExisst(String login) {
+        User user = findByLogin(login);
+        return user != null;
+    }
+
     private boolean emailExist(String email) {
         User user = findByEmail(email);
-        if (user != null) {
-            return true;
-        }
-        return false;
+        return user != null;
     }
 
     @Override
@@ -80,5 +82,11 @@ public class UserServiceImpl implements UserService{
         User user = userRepo.findOne(userId);
         user.setActive(isActive);
         userRepo.save(user);
+    }
+
+    @Override
+    public User findByLogin(String login) {
+        User byLogin = userRepo.findByLogin(login);
+        return byLogin;
     }
 }

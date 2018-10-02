@@ -76,7 +76,7 @@
                                                th:field="*{login}"/>
                                     </div>
                                     <p class="error-message"
-                                       th:each="error: ${#fields.errors('lastName')}"
+                                       th:each="error: ${#fields.errors('login')}"
                                        th:text="${error}">Validation error</p>
                                 </div>
                                 <div class="form-group"
