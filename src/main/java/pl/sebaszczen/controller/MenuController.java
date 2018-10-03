@@ -4,9 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import pl.sebaszczen.domain.User;
 import pl.sebaszczen.domain.UserDto;
-import pl.sebaszczen.domain.resetPassword.PasswordForgotDto;
 
 @Controller
 public class MenuController {
@@ -19,6 +17,11 @@ public class MenuController {
     @GetMapping("/menu")
     public String getMenu() {
         return "menu";
+    }
+
+    @GetMapping("/chart")
+    public String getChart() {
+        return "chart";
     }
 
     @GetMapping("/registration")
