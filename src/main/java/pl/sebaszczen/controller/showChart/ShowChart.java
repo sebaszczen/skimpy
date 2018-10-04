@@ -1,36 +1,38 @@
 package pl.sebaszczen.controller.showChart;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.client.RestTemplate;
 import pl.sebaszczen.domain.weather.WeatherStation;
-import pl.sebaszczen.repository.WeatherInterface;
+import pl.sebaszczen.repository.WeatherReposiory;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
 
+@Controller
 public class ShowChart {
     @Autowired
-    WeatherInterface weatherInterface;
+    WeatherReposiory weatherReposiory;
 
     @GetMapping("showchart")
     public String getchart(Model model) {
-        List<WeatherStation> all = weatherInterface.findAll();
-        Object[][] table = new Object[3][all.size()];
+        List<WeatherStation> all = weatherReposiory.findByStacja("Chojnice");
 
-        for (int row = 0; row < table.length; row++) {
-            for (int column = 0; column < table[row].length; column++) {
+        Object[][] table = new Object[all.size()+1][2];
+        table[0][0] = "year";
+        table[0][1] = "temperature";
 
-            }
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy");
+
+        for (int row = 1; row < table.length; row++) {
+                table[row][0]=simpleDateFormat.format(weatherReposiory.getOne((row+0L)).getData_pomiaru().getTime());
+                table[row][1]= weatherReposiory.getOne((row+0L)).getTemperatura();
         }
 
+        model.addAttribute("dataList", table);
         return "chart";
     }
 
-    public WeatherStation[] getData() {
-        RestTemplate restTemplate = new RestTemplate();
-        String url = "https://danepubliczne.imgw.pl/api/data/synop";
-        WeatherStation[] forObject = restTemplate.getForObject(url, WeatherStation[].class);
-        return forObject;
-    }
+
 }

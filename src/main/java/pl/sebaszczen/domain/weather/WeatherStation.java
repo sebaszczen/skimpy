@@ -1,16 +1,23 @@
 package pl.sebaszczen.domain.weather;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.Date;
+import java.util.Calendar;
 
 @Entity
+//@JsonClassDescription
 public class WeatherStation {
     @Id
+    @GeneratedValue
+    Long id;
     private Long id_stacji;
     private String stacja;
-    private Date data_pomiaru;
-    private String godzina_pomiaru;
+    private Calendar data_pomiaru;
+    @JsonProperty(value = "godzina_pomiaru")
+    private String hour;
     private float temperatura;
     private float predkosc_wiatru;
     private int kierunek_wiatru;
@@ -21,11 +28,56 @@ public class WeatherStation {
     public WeatherStation() {
     }
 
-    public WeatherStation(Long id_stacji, float temperatura, float predkosc_wiatru, Date data_pomiaru) {
+    public WeatherStation(Long id_stacji, float temperatura, float predkosc_wiatru, Calendar data_pomiaru) {
         this.id_stacji = id_stacji;
         this.temperatura = temperatura;
         this.predkosc_wiatru = predkosc_wiatru;
         this.data_pomiaru = data_pomiaru;
+    }
+
+    public Long getId_stacji() {
+        return id_stacji;
+    }
+
+    public String getStacja() {
+        return stacja;
+    }
+
+
+    public String getHour() {
+        return hour;
+    }
+
+    public float getTemperatura() {
+        return temperatura;
+    }
+
+    public float getPredkosc_wiatru() {
+        return predkosc_wiatru;
+    }
+
+    public int getKierunek_wiatru() {
+        return kierunek_wiatru;
+    }
+
+    public void setData_pomiaru(Calendar data_pomiaru) {
+        this.data_pomiaru = data_pomiaru;
+    }
+
+    public Calendar getData_pomiaru() {
+        return data_pomiaru;
+    }
+
+    public float getWilgotnosc_wzgledna() {
+        return wilgotnosc_wzgledna;
+    }
+
+    public float getSuma_opadu() {
+        return suma_opadu;
+    }
+
+    public float getCisnienie() {
+        return cisnienie;
     }
 
     public void setId_stacji(Long id_stacji) {
@@ -36,12 +88,8 @@ public class WeatherStation {
         this.stacja = stacja;
     }
 
-    public void setData_pomiaru(Date data_pomiaru) {
-        this.data_pomiaru = data_pomiaru;
-    }
-
-    public void setGodzina_pomiaru(String godzina_pomiaru) {
-        this.godzina_pomiaru = godzina_pomiaru;
+    public void setHour(String hour) {
+        this.hour = hour;
     }
 
     public void setTemperatura(float temperatura) {
@@ -74,7 +122,7 @@ public class WeatherStation {
                 "id_stacji=" + id_stacji +
                 ", stacja='" + stacja + '\'' +
                 ", data_pomiaru='" + data_pomiaru + '\'' +
-                ", godzina_pomiaru='" + godzina_pomiaru + '\'' +
+                ", hour='" + hour + '\'' +
                 ", temperatura=" + temperatura +
                 ", predkosc_wiatru=" + predkosc_wiatru +
                 ", kierunek_wiatru=" + kierunek_wiatru +
