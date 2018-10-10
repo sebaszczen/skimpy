@@ -25,9 +25,9 @@ public class ShowChart {
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy");
 
-        for (int row = 1; row < table.length; row++) {
-                table[row][0]=simpleDateFormat.format(weatherReposiory.getOne((row+0L)).getData_pomiaru().getTime());
-                table[row][1]= weatherReposiory.getOne((row+0L)).getTemperatura();
+        for (int row = 1; row < all.size()+1; row++) {
+                table[row][0]=simpleDateFormat.format(all.get(row-1).getData_pomiaru().getTime())+" "+all.get(row-1).getHour();
+                table[row][1]= all.get(row-1).getTemperatura();
         }
 
         model.addAttribute("dataList", table);
