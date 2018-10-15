@@ -7,6 +7,7 @@ import pl.sebaszczen.security.validation.ValidEmail;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.List;
 
 @Entity
 public class User implements UserDetails {
@@ -30,6 +31,7 @@ public class User implements UserDetails {
 
     public User() {
     }
+
 
     private User(final Builder builder) {
         this.email=builder.email;

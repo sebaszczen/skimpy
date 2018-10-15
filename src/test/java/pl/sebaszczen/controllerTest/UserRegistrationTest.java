@@ -15,10 +15,10 @@ import pl.sebaszczen.services.EmailExistsException;
 import pl.sebaszczen.services.UserService;
 import pl.sebaszczen.services.resetPAssword.EmailService;
 
+import static com.sun.org.apache.xerces.internal.util.PropertyState.is;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -27,10 +27,10 @@ public class UserRegistrationTest {
 
     @Autowired
     private MockMvc mockMvc;
-//
+    //
     @MockBean
     EmailService emailService;
-//
+    //
     @Autowired
     UserService userService;
     @Autowired
@@ -53,7 +53,7 @@ public class UserRegistrationTest {
         )
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(model().hasErrors()).
-                andExpect(model().attributeHasFieldErrors("user","password"))
+                andExpect(model().attributeHasFieldErrors("user", "password"))
                 .andExpect(status().isOk());
     }
 
@@ -69,6 +69,7 @@ public class UserRegistrationTest {
                         .param("email", "email@gmail.com")
                         .param("terms", "on")
         )
+
                 .andExpect(MockMvcResultMatchers.status().is(302))
                 .andExpect(model().hasNoErrors())
                 .andExpect(redirectedUrl("/login?registerSuccess"))
@@ -76,8 +77,22 @@ public class UserRegistrationTest {
     }
 
     @Test
+    public void registerFail() throws Exception {
+        this.mockMvc.perform(
+                post("/user/save")
+                        .param("username", "")
+                        .param("lastName", "l")
+                        .param("login", "login")
+                        .param("password", "Zaq1@wsx")
+                        .param("matchingPassword", "Zaq1@wsx")
+                        .param("email", "email@gmail.com")
+                        .param("terms", "on")
+        ).andExpect(model().attributeHasFieldErrors("user", "username"));
+    }
+
+    @Test
     public void failRegisterUserWithExistingEmail() throws EmailExistsException {
-        UserDto userDto=mockUserDto.userDtoList().get(0);
+        UserDto userDto = mockUserDto.userDtoList().get(0);
         userService.save(userDto);
     }
 }
