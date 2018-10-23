@@ -3,19 +3,17 @@ package pl.sebaszczen.domain;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import pl.sebaszczen.security.validation.ValidEmail;
 
 import javax.persistence.*;
 import java.util.Collection;
-import java.util.List;
 
 @Entity
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    private String username;
+    private String lastName;
+    public String userName;
     private String login;
     private String password;
     private String email;
@@ -32,25 +30,15 @@ public class User implements UserDetails {
     public User() {
     }
 
-
     private User(final Builder builder) {
         this.email=builder.email;
         this.login=builder.login;
         this.password = builder.password;
-        this.email = builder.email;
-        this.active = builder.active;
+        this.lastName = builder.lastName;
+        this.userName = builder.username;
     }
 
-    public User(String username, String login, String encode, String email) {
-        this.username=username;
-        this.login=login;
-        this.password = encode;
-        this.email = email;
-    }
-
-
-    public boolean isActive(){
-
+    private boolean isActive(){
         return active;
     }
 
@@ -66,6 +54,14 @@ public class User implements UserDetails {
         this.email = email;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
     public Long getId() {
         return id;
     }
@@ -75,7 +71,7 @@ public class User implements UserDetails {
     }
 
     public String getUsername() {
-        return username;
+        return userName;
     }
 
     @Override
@@ -98,8 +94,8 @@ public class User implements UserDetails {
         return isActive();
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getLogin() {
@@ -124,22 +120,19 @@ public class User implements UserDetails {
     }
 
     public static class Builder{
-        private Long id;
-
         private String username;
+        private String lastName;
         private String login;
         private String password;
         private String email;
-        private boolean active = false;
-        private Collection<Role> roles;
-
-        public Builder setId(Long id) {
-            this.id = id;
-            return this;
-        }
 
         public Builder setUsername(String username) {
             this.username = username;
+            return this;
+        }
+
+        public Builder setLastName(String lastName) {
+            this.lastName = lastName;
             return this;
         }
 
@@ -155,16 +148,6 @@ public class User implements UserDetails {
 
         public Builder setEmail(String email) {
             this.email = email;
-            return this;
-        }
-
-        public Builder setActive(boolean active) {
-            this.active = active;
-            return this;
-        }
-
-        public Builder setRoles(Collection<Role> roles) {
-            this.roles = roles;
             return this;
         }
 

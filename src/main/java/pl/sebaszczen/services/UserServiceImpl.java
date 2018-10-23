@@ -40,10 +40,16 @@ public class UserServiceImpl implements UserService{
                             +  userDto.getEmail());
         }
         else {
-            User user = new User(userDto.getUsername(), userDto.getLogin(), passwordEncoder.encode(userDto.getPassword()), userDto.getEmail());
+            User user = new User.Builder().setUsername(userDto.getUserName()).setLogin(userDto.getLogin())
+                    .setPassword(passwordEncoder.encode(userDto.getPassword())).setEmail(userDto.getEmail()).build();
             userRepo.save(user);
             return user;
         }
+    }
+
+    @Override
+    public User findById(Long id) {
+        return userRepo.findOne(id);
     }
 
     private boolean loginExisst(String login) {

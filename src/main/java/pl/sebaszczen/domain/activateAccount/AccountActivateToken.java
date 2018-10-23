@@ -3,8 +3,6 @@ package pl.sebaszczen.domain.activateAccount;
 import pl.sebaszczen.domain.User;
 
 import javax.persistence.*;
-import java.util.Calendar;
-import java.util.Date;
 
 @Entity
 public class AccountActivateToken {

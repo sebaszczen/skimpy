@@ -40,7 +40,7 @@
                             </div>
                             <div th:if="${param.error}">
                                 <div class="alert alert-danger">
-                                    Invalid username or password.
+                                    Invalid userName or password.
                                 </div>
                             </div>
                             <div th:if="${param.disabled}">
@@ -63,7 +63,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon">@</span>
-                                        <input id="username"
+                                        <input id="userName"
                                                name="username"
                                                autofocus="autofocus"
                                                class="form-control"
@@ -82,6 +82,14 @@
                                                type="password"/>
                                     </div>
                                 </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="remember">Remeber me?</label>
+                                        <input id="remember" type="checkbox" name="remember-me" value="true"/>
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-success btn-block">Login</button>
                                 </div>

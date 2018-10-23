@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 import pl.sebaszczen.domain.User;
 
 public interface UserRepo extends JpaRepository<User,Long> {
-    java.util.Optional<User> findByUsername(String name);
+    java.util.Optional<User> findByUserName(String name);
 
     User findByEmail(String email);
 

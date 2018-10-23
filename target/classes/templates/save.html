@@ -36,7 +36,7 @@
 
 
                                 <div class="form-group"
-                                     th:classappend="${#fields.hasErrors('username')}? 'has-error':''">
+                                     th:classappend="${#fields.hasErrors('userName')}? 'has-error':''">
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="glyphicon glyphicon-user color-blue"></i>
@@ -44,10 +44,10 @@
                                         <input id="firstName"
                                                class="form-control"
                                                placeholder="First name"
-                                               th:field="*{username}"/>
+                                               th:field="*{userName}"/>
                                     </div>
                                     <p class="error-message"
-                                       th:each="error: ${#fields.errors('username')}"
+                                       th:each="error: ${#fields.errors('userName')}"
                                        th:text="${error}">Validation error</p>
                                 </div>
                                 <div class="form-group"

@@ -2,7 +2,6 @@ package pl.sebaszczen.controller.passwordReset;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -72,6 +71,7 @@ public class PasswordForgotController {
         model.put("signature", "https://skimpy.com");
         String url = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort();
         model.put("resetUrl", url + "/reset-password?token=" + token.getToken());
+        model.put("templateHtml", "email-template");
         mail.setModel(model);
         emailService.sendEmail(mail);
 

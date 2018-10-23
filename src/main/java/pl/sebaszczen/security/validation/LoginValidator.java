@@ -5,10 +5,11 @@ import pl.sebaszczen.services.UserService;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.logging.Logger;
 
 public class LoginValidator implements ConstraintValidator<LoginExist, String> {
+
+    private final Logger LOGGER = Logger.getLogger(String.valueOf(LoginValidator.class));
 
     @Autowired
     UserService userService;
@@ -25,8 +26,13 @@ public class LoginValidator implements ConstraintValidator<LoginExist, String> {
 
     private boolean loginExist(String login) {
         boolean loginExist=true;
-        if (userService.findByLogin(login)==null){
-            loginExist=false;
+        try {
+            if (userService.findByLogin(login).equals(null)) {
+            }
+        }
+        catch (NullPointerException e){
+            LOGGER.info("no user found with login: "+login);
+            loginExist = false;
         }
         return loginExist;
     }

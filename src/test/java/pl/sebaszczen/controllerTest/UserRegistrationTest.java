@@ -2,21 +2,24 @@ package pl.sebaszczen.controllerTest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
+import org.mockito.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import pl.sebaszczen.controller.LoginController;
+import pl.sebaszczen.controller.user.SaveUser;
 import pl.sebaszczen.domain.*;
+import pl.sebaszczen.facade.EmailFacade;
+import pl.sebaszczen.facade.UserFacade;
+import pl.sebaszczen.mocks.MockUser;
+import pl.sebaszczen.mocks.MockUserDto;
 import pl.sebaszczen.services.EmailExistsException;
-import pl.sebaszczen.services.UserService;
 import pl.sebaszczen.services.resetPAssword.EmailService;
 
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static pl.sebaszczen.controllerTest.GlobalErrorsMatchers.globalErrors;
@@ -28,23 +31,20 @@ public class UserRegistrationTest {
 
     @Autowired
     private MockMvc mockMvc;
-    @Mock
-    private UserService userService;
     @InjectMocks
-    private LoginController loginController;
-    @Autowired
-    MockUserDto mockUserDto;
+    private SaveUser saveUser;
     @Mock
-    EmailService emailService;
+    private EmailService emailService;
+    @Mock
+    private UserFacade userFacade;
+    @Mock
+    private EmailFacade emailFacade;
 
     @Test
     public void submitWeakPassword() throws Exception {
-//        Mockito.when(accountActivateTokenRepository.save(mockToken.accountActivateTokens().get(0)))
-//                .then()
-
         this.mockMvc.perform(
                 post("/user/save")
-                        .param("username", "")
+                        .param("userName", "")
                         .param("lastname", "l")
                         .param("login", "login")
                         .param("password", "password")
@@ -56,17 +56,15 @@ public class UserRegistrationTest {
                 .andExpect(model().hasErrors()).
                 andExpect(model().attributeHasFieldErrors("user", "password")).
                 andExpect(model().attributeHasFieldErrorCode("user","password","PasswordStrength"))
-                .andExpect(model().attributeHasFieldErrorCode("user","username","NotEmpty"))
+                .andExpect(model().attributeHasFieldErrorCode("user","userName","NotEmpty"))
                 .andExpect(status().isOk());
-
-
     }
 
     @Test
     public void emptyNameMessage() throws Exception {
         this.mockMvc.perform(
                 post("/user/save")
-                        .param("username", "")
+                        .param("userName", "")
                         .param("lastname", "l")
                         .param("login", "login")
                         .param("password", "Zaq1@wsx")
@@ -82,21 +80,21 @@ public class UserRegistrationTest {
 
     @Test
     public void registerSuccess() throws Exception, EmailExistsException {
-        UserDto userDto= new UserDto.Builder().setEmail("email@gmail.com").setLastName("l")
-                .setLogin("login").setMatchingPassword("Zaq1@wsx").setPassword("Zaq1@wsx")
-                .setTerms(true).setUsername("s").build();
-        User user = new User(userDto.getUsername(), userDto.getLogin(), userDto.getPassword(), userDto.getEmail());
-        Mockito.when(userService.save(userDto)).thenReturn(user);
-        Mockito.doNothing().when(emailService.sendEmail());
+        UserDto accountDto = MockUserDto.getProperUserDto();
+        User properUser = MockUser.getProperUser();
+        when(userFacade.createUserAccount(accountDto)).thenReturn(properUser);
+        doNothing().when(emailFacade).activateToken(Matchers.any(),Matchers.any());
+        Mockito.doNothing().when(emailService).sendEmail(Matchers.any());
+
         this.mockMvc.perform(
                 post("/user/save")
-                        .param("username", "s")
-                        .param("lastName", "l")
-                        .param("login", "login")
-                        .param("password", "Zaq1@wsx")
-                        .param("matchingPassword", "Zaq1@wsx")
-                        .param("email", "email@gmail.com")
-                        .param("terms", "true")
+                        .param("userName", accountDto.getUserName())
+                        .param("lastName", accountDto.getLastName())
+                        .param("login", accountDto.getLogin())
+                        .param("password", accountDto.getPassword())
+                        .param("matchingPassword", accountDto.getMatchingPassword())
+                        .param("email", accountDto.getEmail())
+                        .param("terms", accountDto.getTerms().toString())
         )
 
                 .andExpect(MockMvcResultMatchers.status().is(302))
@@ -109,19 +107,14 @@ public class UserRegistrationTest {
     public void registerFail() throws Exception {
         this.mockMvc.perform(
                 post("/user/save")
-                        .param("username", "")
+                        .param("userName", "")
                         .param("lastName", "l")
                         .param("login", "login")
                         .param("password", "Zaq1@wsx")
                         .param("matchingPassword", "Zaq1@wsx")
                         .param("email", "email@gmail.com")
-                        .param("terms", "on")
-        ).andExpect(model().attributeHasFieldErrors("user", "username"));
+                        .param("terms", "true")
+        ).andExpect(model().attributeHasFieldErrors("user", "userName"));
     }
 
-    @Test
-    public void failRegisterUserWithExistingEmail() throws EmailExistsException {
-        UserDto userDto = mockUserDto.userDtoList().get(0);
-        userService.save(userDto);
-    }
 }

@@ -9,6 +9,8 @@ import java.util.List;
 public interface UserService extends UserDetailsService {
     User save (UserDto userDto) throws EmailExistsException;
 
+    User findById(Long id);
+
     List<User> findAll();
 
     void deleteUser(Long id);

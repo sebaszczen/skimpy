@@ -8,12 +8,13 @@ import pl.sebaszczen.security.validation.ValidEmail;
 
 import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.NotNull;
+import java.util.Objects;
 
 @PasswordMatches
 public class UserDto {
     @NotNull
     @NotEmpty
-    private String username;
+    private String userName;
     @NotEmpty
     private String lastName;
     @NotNull
@@ -36,7 +37,7 @@ public class UserDto {
     private Boolean terms;
 
     public UserDto(final Builder builder) {
-        this.username=builder.username;
+        this.userName =builder.username;
         this.lastName = builder.lastName;
         this.login = builder.login;
         this.password = builder.password;
@@ -80,12 +81,12 @@ public class UserDto {
         this.email = email;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getLogin() {
@@ -150,5 +151,25 @@ public class UserDto {
         public UserDto build(){
             return new UserDto(this);
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserDto userDto = (UserDto) o;
+        return Objects.equals(userName, userDto.userName) &&
+                Objects.equals(lastName, userDto.lastName) &&
+                Objects.equals(login, userDto.login) &&
+                Objects.equals(password, userDto.password) &&
+                Objects.equals(matchingPassword, userDto.matchingPassword) &&
+                Objects.equals(email, userDto.email) &&
+                Objects.equals(terms, userDto.terms);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(userName, lastName, login, password, matchingPassword, email, terms);
     }
 }
