@@ -33,7 +33,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzan
 
     private String[] permitAll = {
             "/css/**", "/webjars/**", "/menu", "/registration", "/user/**", "/js/**"
-            , "/fonts/**", "/images/**", "/login/**", "/activate-account/**"};
+            , "/fonts/**", "/images/**", "/login/**", "/activate-account/**", "/sw", "/swagger-ui.html/**", "/user/**"
+            , "/v2/api-docs/**", "/configuration/ui/**", "/swagger-resources/**", "/configuration/security/**", "/swagger-ui.html/**", "/webjars/**"};//swagger
 
     //umozliwia konfiguracje uslug szczegolow uzytkownika
     @Autowired
@@ -66,8 +67,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzan
                 .successHandler(loginSuccessHandler()).failureHandler(authenticationFailureHandler())
                 //po logowaniu sa dwa wyjscia-udalo sie zalogowac lub nie tutaj nastepuje obsluga tych dwoch wydarzen
                 .and().logout().permitAll()
-                .and().rememberMe().tokenRepository(persistentTokenRepository())
-        ;
+                .and().rememberMe().tokenRepository(persistentTokenRepository());
     }
 
     private AuthenticationFailureHandler authenticationFailureHandler() {

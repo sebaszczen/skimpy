@@ -9,14 +9,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import pl.sebaszczen.controller.user.SaveUser;
-import pl.sebaszczen.domain.*;
+import pl.sebaszczen.controller.thymeleafConroller.user.SaveUserController;
+import pl.sebaszczen.domain.user.User;
+import pl.sebaszczen.domain.user.UserDto;
 import pl.sebaszczen.facade.EmailFacade;
 import pl.sebaszczen.facade.UserFacade;
 import pl.sebaszczen.mocks.MockUser;
 import pl.sebaszczen.mocks.MockUserDto;
 import pl.sebaszczen.services.EmailExistsException;
-import pl.sebaszczen.services.resetPAssword.EmailService;
+import pl.sebaszczen.services.EmailService;
 
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
@@ -32,7 +33,7 @@ public class UserRegistrationTest {
     @Autowired
     private MockMvc mockMvc;
     @InjectMocks
-    private SaveUser saveUser;
+    private SaveUserController saveUserController;
     @Mock
     private EmailService emailService;
     @Mock

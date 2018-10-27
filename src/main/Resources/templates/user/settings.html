@@ -30,6 +30,8 @@
     </div>
 </nav>
 
+<p th:text="#{message.welcome}">Welcome to our grocery store!</p>
+
 <table class="table">
     <thead>
     <tr>
@@ -40,11 +42,14 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="u: ${user}">
-        <td th:text="${user.userName}"></td>
-        <td th:text="${user.lastName}"></td>
-        <td th:text="${user.login}"></td>
-        <td th:text="${user.email}"></td>
+    <tr th:object="${user}">
+        <td th:text="*{userName != null}? *{userName} : '(no userName specified)' "></td>
+        <td th:text="*{lastName != null}? *{lastName} : '(no lastName specified)'"></td>
+        <td th:text="*{login !=null}? *{login}: '(no login specified)'"></td>
+        <td th:text="*{email !=null}? *{email}: '(no email specified)'"></td>
+        <td>
+            <a th:href="@{/user/update?id={id} (id=${user.id})}" role="button"> Update User</a>
+        </td>
     </tr>
     </tbody>
 </table>

@@ -2,68 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39fa7122-c913-426a-bcd7-f81489830ac0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/data.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/templates/user/settings.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SwaggerConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DaleteUser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DisplayUserSettings.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/SaveUser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/EmailFacade.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/UserFacade.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUserDto.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_196.xml" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/messages_pl_PL.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/static/css/hanger/hanger.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/static/js/hanger/hanger.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/templates/game/hanger.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/templates/user/updateUser.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/RedirectSwagger.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/restController/userController/UserController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/hanger/hanger.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/UpdateUser.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/skimpy.iml" afterPath="$PROJECT_DIR$/skimpy.iml" />
       <change beforePath="$PROJECT_DIR$/src/main/Resources/application.properties" afterPath="$PROJECT_DIR$/src/main/Resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/messages_en.properties" afterPath="$PROJECT_DIR$/src/main/Resources/messages_en.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/messages_es_ES.properties" afterPath="$PROJECT_DIR$/src/main/Resources/messages_es_ES.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/templates/email.html" afterPath="$PROJECT_DIR$/src/main/Resources/templates/email.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/templates/email/activate-account-email-template.html" afterPath="$PROJECT_DIR$/src/main/Resources/templates/email/activate-account-email-template.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/templates/email/email-template.html" afterPath="$PROJECT_DIR$/src/main/Resources/templates/email/email-template.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/messages_en.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/messages_es_ES.properties" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/Resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/Resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/Resources/templates/login.html" />
       <change beforePath="$PROJECT_DIR$/src/main/Resources/templates/save.html" afterPath="$PROJECT_DIR$/src/main/Resources/templates/save.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/templates/saved.html" afterPath="$PROJECT_DIR$/src/main/Resources/templates/saved.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/App.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/App.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/LoginController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordReset/PasswordForgotController.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordReset/PasswordForgotController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/showChart/SaveData.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/showChart/SaveData.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/InactiveException.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/InactiveException.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/Role.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/Role.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/activateAccount/AccountActivateToken.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/activateAccount/AccountActivateToken.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/Mail.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/Mail.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/PasswordForgotDto.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/PasswordForgotDto.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/PasswordResetDto.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/PasswordResetDto.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/PasswordResetToken.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/PasswordResetToken.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/weather/WeatherStation.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/weather/WeatherStation.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/templates/user/settings.html" afterPath="$PROJECT_DIR$/src/main/Resources/templates/user/settings.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SecurityConfig.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SwaggerConfig.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SwaggerConfig.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/MenuController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/activateAccount/ActivateAccountController.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/ActivateUserAccountController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordReset/PasswordForgotController.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/passwordController/PasswordForgotController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordReset/PasswordResetController.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/passwordController/PasswordResetController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/showChart/SaveData.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/chartController/SaveData.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/showChart/ShowChart.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/chartController/ShowChart.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DaleteUser.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/DaleteUserController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DisplayUserSettings.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/DisplayUserSettingsController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/SaveUser.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/SaveUserController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/Role.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/user/Role.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/user/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/user/UserDto.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/activateAccount/AccountActivateToken.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/token/AccountActivateToken.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/Mail.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/password/Mail.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/PasswordForgotDto.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/password/PasswordForgotDto.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/PasswordResetDto.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/password/PasswordResetDto.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/resetPassword/PasswordResetToken.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/password/PasswordResetToken.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/EmailFacade.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/EmailFacade.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/UserFacade.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/UserFacade.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/AccountActivateTokenRepository.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/AccountActivateTokenRepository.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/PasswordResetTokenRepository.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/PasswordResetTokenRepository.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/UserRepo.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/UserRepo.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SecurityConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/LoginValidator.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/LoginValidator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/EmailValidator.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/EmailValidator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordMatchesValidator.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordMatchesValidator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordResetMatches.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordResetMatches.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordResetMatchesValidator.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordResetMatchesValidator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordStrength.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordStrength.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordStrengthValidator.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordStrengthValidator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/ValidEmail.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/ValidEmail.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/resetPAssword/EmailService.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/resetPAssword/EmailService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/resetPAssword/EmailService.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/EmailService.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/controllerTest/UserRegistrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/controllerTest/UserRegistrationTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/MockMail.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/MockToken.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/MockUser.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/MockUserDto.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUser.java" afterPath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUser.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUserDto.java" afterPath="$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUserDto.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/App.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/App.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/LoginController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/User.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/User.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/User.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/repository/UserRepo.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/repository/UserRepo.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/SecurityConfig.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/services/UserService.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/services/UserService.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/services/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/services/UserServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/save.html" afterPath="$PROJECT_DIR$/target/classes/templates/save.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/saved.html" afterPath="$PROJECT_DIR$/target/classes/templates/saved.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,96 +82,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/user/settings.html">
+      <file leaf-file-name="hanger.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/game/hanger.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="23" selection-end-column="17" />
+            <state relative-caret-position="119">
+              <caret line="7" column="92" lean-forward="false" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SecurityConfig.java">
+      <file leaf-file-name="hanger.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/static/css/hanger/hanger.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+            <state relative-caret-position="229">
+              <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSource.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/javax/sql/DataSource.java">
+      <file leaf-file-name="hanger.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/static/js/hanger/hanger.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+            <state relative-caret-position="215">
+              <caret line="105" column="81" lean-forward="false" selection-start-line="105" selection-start-column="81" selection-end-line="105" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/data.sql">
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/static/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmbeddedDatabaseType.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.12.RELEASE/spring-jdbc-4.3.12.RELEASE.jar!/org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseType.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-              <folding>
-                <marker date="1523546682401" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1523546682401" expanded="true" signature="261:268" ph="{}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SwaggerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="77" column="17" lean-forward="false" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -186,6 +129,7 @@
       <list>
         <option value="TestNG Test Class" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
         <option value="HTML File" />
       </list>
@@ -193,29 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rest</find>
-      <find>WeatherStation</find>
-      <find>save</find>
-      <find>savedata</find>
-      <find>modelatt</find>
-      <find>reset</find>
-      <find>forgot-password</find>
-      <find>request</find>
-      <find>passwordResetForm</find>
-      <find>token</find>
-      <find>PasswordStrength</find>
-      <find>may not be empty</find>
-      <find>bindingResult</find>
-      <find>match</find>
-      <find>resultmatcher</find>
-      <find>getpas</find>
-      <find>UserDetailsService</find>
-      <find>user</find>
-      <find>activate-</find>
-      <find>email-tem</find>
-      <find>activate-account</find>
-      <find>quer</find>
-      <find>userRepo</find>
       <find>username</find>
       <find>/login</find>
       <find>AuthenticationToken</find>
@@ -223,6 +144,29 @@
       <find>Page Content</find>
       <find>datasourc</find>
       <find>depend</find>
+      <find>principal</find>
+      <find>response</find>
+      <find>swa</find>
+      <find>gitignore</find>
+      <find>forgotPasswordForm</find>
+      <find>accountNonExpired</find>
+      <find>registration</find>
+      <find>sw</find>
+      <find>requestpar</find>
+      <find>requestpara</find>
+      <find>requestbod</find>
+      <find>delete</find>
+      <find>web-in</find>
+      <find>pl</find>
+      <find>saved</find>
+      <find>th:href</find>
+      <find>principa</find>
+      <find>hanger</find>
+      <find>logged</find>
+      <find>index</find>
+      <find>web.xml</find>
+      <find>serv</find>
+      <find>configurePathMatch</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -230,6 +174,8 @@
     <dirStrings>
       <dir>C:\Nowy folder\skimpyy\src\main\java\pl\sebaszczen\domain</dir>
       <dir>C:\Nowy folder\skimpyy\src\main\Resources\templates\email</dir>
+      <dir>C:\Nowy folder\skimpyy\src\main\Resources\templates\game</dir>
+      <dir>C:\Nowy folder\skimpyy\src\main\Resources\static</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -249,57 +195,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Resources/templates/save.html" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/PasswordMatches.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/InactiveException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/templates/menu/index.html" />
-        <option value="$PROJECT_DIR$/src/main/Resources/static/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/Resources/templates/saved.html" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/WeatherInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/weather/WeatherStation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/WeatherReposiory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/showChart/ShowChart.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/templates/chart.html" />
-        <option value="$PROJECT_DIR$/src/main/Resources/templates/forgot-password.html" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordReset/PasswordResetController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/activateAccount/ActivateAccountController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/showChart/SaveData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/sebaszczen/controllerTest/SamePasswordsValidator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/sebaszczen/controllerTest/GlobalErrorsMatchers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/LoginValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/AccountActivateTokenRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/mocks/User.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/sebaszczen/domain/MockUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUserDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/EmailFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordReset/PasswordForgotController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/resetPAssword/EmailService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/SaveUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/SaveUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DaleteUser.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/templates/Menu.html" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/sebaszczen/controllerTest/UserRegistrationTest.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/main/Resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DisplayUserSettings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/sql/persistent_login_table.sql" />
+        <option value="$PROJECT_DIR$/src/main/Resources/persistent_login_table.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/validation/LoginExist.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/PasswordMatches.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/security/validation/LoginValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordController/PasswordForgotController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DaleteUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DisplayUserSettingsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/SaveUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/SaveUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/ActivateAccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/ActivateUserAccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/password/Mail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/user/UserDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/restController/RedirectSwagger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/restController/userController/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/RedirectSwagger.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/UserFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DisplayUserSettings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/templates/user/settings.html" />
-        <option value="$PROJECT_DIR$/src/main/Resources/sql/persistent_login_table.sql" />
-        <option value="$PROJECT_DIR$/src/main/Resources/persistent_login_table.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/Resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/UpdateUser.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/templates/user/updateUser.html" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/token/AccountActivateToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/user/User.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/Resources/messages_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/Resources/templates/save.html" />
+        <option value="$PROJECT_DIR$/src/main/Resources/templates/user/settings.html" />
+        <option value="$PROJECT_DIR$/src/main/Resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/Resources/messages_en_EN.properties" />
+        <option value="$PROJECT_DIR$/src/main/Resources/messages_pl_PL.properties" />
+        <option value="$PROJECT_DIR$/src/main/Resources/templates/game/hanger.css" />
+        <option value="$PROJECT_DIR$/src/main/Resources/static/css/hanger.css" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/Resources/templates/hanger.html" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/hanger/hanger.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/templates/game/hanger.html" />
+        <option value="$PROJECT_DIR$/src/main/Resources/static/js/hanger/hanger.js" />
+        <option value="$PROJECT_DIR$/src/main/Resources/static/css/hanger/hanger.css" />
       </list>
     </option>
   </component>
@@ -329,8 +275,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
+    <option name="x" value="13" />
+    <option name="width" value="1181" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -355,9 +301,11 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
-    <navigator currentView="AndroidView" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -371,7 +319,92 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+              <item name="sebaszczen" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+              <item name="sebaszczen" type="1f31426a:PackageElementNode" />
+              <item name="configuration" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+              <item name="sebaszczen" type="1f31426a:PackageElementNode" />
+              <item name="controller" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+              <item name="sebaszczen" type="1f31426a:PackageElementNode" />
+              <item name="controller" type="1f31426a:PackageElementNode" />
+              <item name="restController" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+              <item name="sebaszczen" type="1f31426a:PackageElementNode" />
+              <item name="controller" type="1f31426a:PackageElementNode" />
+              <item name="restController" type="1f31426a:PackageElementNode" />
+              <item name="userController" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+              <item name="sebaszczen" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+              <item name="sebaszczen" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+              <item name="token" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+              <item name="sebaszczen" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+              <item name="user" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pl" type="1f31426a:PackageElementNode" />
+              <item name="sebaszczen" type="1f31426a:PackageElementNode" />
+              <item name="services" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="static" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="templates" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="templates" type="1f31426a:PackageElementNode" />
+              <item name="user" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="skimpyy" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Resource Bundle 'messages'" type="a6c14932:ResourceBundleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -403,40 +436,6 @@
               <item name="java" type="b5c1fe26:NonAndroidSourceTypeNode" />
               <item name="pl" type="462c0819:PsiDirectoryNode" />
               <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="java" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="java" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="activateAccount" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="java" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="java" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -445,7 +444,8 @@
               <item name="java" type="b5c1fe26:NonAndroidSourceTypeNode" />
               <item name="pl" type="462c0819:PsiDirectoryNode" />
               <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="facade" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="password" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
@@ -453,7 +453,8 @@
               <item name="java" type="b5c1fe26:NonAndroidSourceTypeNode" />
               <item name="pl" type="462c0819:PsiDirectoryNode" />
               <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="token" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
@@ -461,71 +462,125 @@
               <item name="java" type="b5c1fe26:NonAndroidSourceTypeNode" />
               <item name="pl" type="462c0819:PsiDirectoryNode" />
               <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="resetPAssword" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="tests" type="b5c1fe26:NonAndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="tests" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="tests" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="tests" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="mocks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="resources" type="b5c1fe26:NonAndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="resources" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="resources" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="resources" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skimpyy" type="1abcf292:AndroidViewProjectNode" />
-              <item name="skimpy" type="1039202d:NonAndroidModuleNode" />
-              <item name="resources" type="b5c1fe26:NonAndroidSourceTypeNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="pl" type="cbb8eebc:String" user="pl" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="pl" type="cbb8eebc:String" user="pl" />
+              <item name="sebaszczen" type="cbb8eebc:String" user="sebaszczen" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="pl" type="cbb8eebc:String" user="pl" />
+              <item name="sebaszczen" type="cbb8eebc:String" user="sebaszczen" />
+              <item name="controller" type="cbb8eebc:String" user="controller" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="pl" type="cbb8eebc:String" user="pl" />
+              <item name="sebaszczen" type="cbb8eebc:String" user="sebaszczen" />
+              <item name="controller" type="cbb8eebc:String" user="controller" />
+              <item name="thymeleafConroller" type="cbb8eebc:String" user="thymeleafConroller" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="pl" type="cbb8eebc:String" user="pl" />
+              <item name="sebaszczen" type="cbb8eebc:String" user="sebaszczen" />
+              <item name="controller" type="cbb8eebc:String" user="controller" />
+              <item name="thymeleafConroller" type="cbb8eebc:String" user="thymeleafConroller" />
+              <item name="hanger" type="cbb8eebc:String" user="hanger" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="Resources" type="cbb8eebc:String" user="Resources" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="Resources" type="cbb8eebc:String" user="Resources" />
+              <item name="templates" type="cbb8eebc:String" user="templates" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="Resources" type="cbb8eebc:String" user="Resources" />
+              <item name="templates" type="cbb8eebc:String" user="templates" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="skimpyy" type="cbb8eebc:String" user="skimpyy" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="Resources" type="cbb8eebc:String" user="Resources" />
+              <item name="templates" type="cbb8eebc:String" user="templates" />
+              <item name="user" type="cbb8eebc:String" user="user" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -577,7 +632,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pl" type="462c0819:PsiDirectoryNode" />
               <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
@@ -590,51 +645,54 @@
               <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
               <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
               <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
               <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
               <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="hanger" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
               <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="controllerTest" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skimpyy" type="b2602c69:ProjectViewProjectNode" />
               <item name="skimpyy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="sebaszczen" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -669,10 +727,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\static" />
       <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates" />
+      <recent name="C:\Nowy folder\skimpyy\src\main\Resources" />
+      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates\user" />
       <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates\email" />
-      <recent name="C:\Nowy folder\skimpy\src\main\Resources" />
-      <recent name="C:\Nowy folder\skimpy\src\main\Resource" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pl.sebaszczen.configuration" />
@@ -682,11 +741,11 @@
       <recent name="pl.sebaszczen.repository" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Nowy folder\skimpyy\src\main\Resources" />
-      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates" />
-      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\static\templates" />
+      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\static\css\hanger" />
+      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates\game\image" />
+      <recent name="C:\Nowy folder\skimpyy\src\main\Resources\templates\game" />
       <recent name="C:\Nowy folder\skimpyy\src\main\Resources\static\css" />
-      <recent name="C:\Nowy folder\skimpyy\src\test\java\pl\sebaszczen\controllerTest" />
+      <recent name="C:\Nowy folder\skimpyy\src\main\Resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -922,6 +981,10 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_NON_PUBLIC,SHOW_FIELDS" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1094,7 +1157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539708154356</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update">
+      <created>1540307839781</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1540307839782</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update">
+      <created>1540308423736</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1540308423736</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1143,27 +1220,27 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12972085" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.4857768" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34951457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.99352753" sideWeight="0.5030257" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267776" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2605178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.99352753" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2605178" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.66019416" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29500756" sideWeight="0.5" order="5" side_tool="true" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708018" sideWeight="0.50647247" order="5" side_tool="true" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64239484" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.47045952" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49029127" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29935277" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5295405" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1175,29 +1252,29 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.99352753" sideWeight="0.5030257" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267776" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.487055" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47734627" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49029127" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12972085" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.4935275" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34951457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19579288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6569579" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2605178" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.99352753" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28517398" sideWeight="0.5" order="5" side_tool="true" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27836612" sideWeight="0.50647247" order="5" side_tool="true" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64239484" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1236,35 +1313,29 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
     <MESSAGE value="email type validation" />
     <MESSAGE value="email strength and match encrypt error" />
     <MESSAGE value="password reset" />
     <MESSAGE value="activate account" />
     <MESSAGE value="changes" />
     <MESSAGE value="error" />
-    <option name="LAST_COMMIT_MESSAGE" value="error" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java</url>
-          <line>45</line>
+          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/DaleteUserController.java</url>
+          <line>22</line>
           <properties />
-          <option name="timeStamp" value="252" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java</url>
-          <line>15</line>
-          <properties field="userName" class="pl.sebaszczen.domain.User" />
-          <option name="timeStamp" value="255" />
+          <option name="timeStamp" value="269" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="266" />
+      <option name="time" value="273" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1273,109 +1344,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/invalid-password-list.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/passwordController/PasswordForgotController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="170">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/email/email-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-298">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/email/activate-account-email-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/passwordReset/PasswordForgotController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="73" column="49" lean-forward="false" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.3.RELEASE/spring-security-config-4.2.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/RememberMeConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.3.RELEASE/spring-security-config-4.2.3.RELEASE.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="111" column="63" lean-forward="true" selection-start-line="111" selection-start-column="63" selection-end-line="111" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/Menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/reset-password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/saved.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/save.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="85" column="57" lean-forward="true" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/repository/UserRepo.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/passwordController/PasswordResetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/user/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/controllerTest/UserRegistrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="95" column="62" lean-forward="true" selection-start-line="95" selection-start-column="62" selection-end-line="95" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/activateAccount/ActivateAccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1388,200 +1384,371 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/resetPAssword/EmailService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/user/updateUser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="17">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/UserFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="e#736#737#0" expanded="false" />
+            <element signature="e#778#779#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1057#1058#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/restController/userController/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding>
+            <element signature="e#1546#1547#0" expanded="false" />
+            <element signature="e#1582#1583#0" expanded="false" />
+            <element signature="e#1898#1899#0" expanded="false" />
+            <element signature="e#1938#1939#0" expanded="false" />
+            <element signature="e#1980#1981#0" expanded="false" />
+            <element signature="e#2008#2009#0" expanded="false" />
+            <element signature="e#2060#2061#0" expanded="false" />
+            <element signature="e#2094#2095#0" expanded="false" />
+            <element signature="e#2332#2333#0" expanded="false" />
+            <element signature="e#2359#2360#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/token/AccountActivateToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/messages_es_ES.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/messages_en.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/RedirectSwagger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#250#251#0" expanded="false" />
+            <element signature="e#302#303#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/DisplayUserSettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/messages_en_EN.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/invalid-password-list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/user/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/messages_pl_PL.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/EmailExistsException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/EmailFacade.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/images/s0.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/game/images/s0.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/SaveUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="39" column="54" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="54" />
+        <state relative-caret-position="192">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sebaszczen/mocks/MockUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="215">
+          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/reset-password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DaleteUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/static/images/s0.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="130">
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/SaveUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/Menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/logged.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/ActivateUserAccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/DaleteUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/user/UpdateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skimpy.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/static/s0.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/save.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="152" column="39" lean-forward="false" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/saved.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/hanger.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="66" column="58" lean-forward="false" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#572#573#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE.jar!/org/springframework/security/core/Authentication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/security/Principal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="51" column="34" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-          <folding>
-            <element signature="e#1679#1680#0" expanded="false" />
-            <element signature="e#1722#1723#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/ThymelafConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="e#1294#1295#0" expanded="false" />
-            <element signature="e#1322#1323#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/facade/UserFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="75" lean-forward="true" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/user/DisplayUserSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="56" column="33" lean-forward="false" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-          <folding>
-            <element signature="e#1272#1273#0" expanded="false" />
-            <element signature="e#1308#1309#0" expanded="false" />
-            <element signature="e#1510#1511#0" expanded="false" />
-            <element signature="e#1545#1546#0" expanded="false" />
-            <element signature="e#1576#1577#0" expanded="false" />
-            <element signature="e#1725#1726#0" expanded="false" />
-            <element signature="e#1756#1757#0" expanded="false" />
-            <element signature="e#2465#2466#0" expanded="false" />
-            <element signature="e#2496#2497#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/logged.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/static/css/shop-homepage.css">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="32">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/hanger/hanger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/game/hanger.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="92" lean-forward="false" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
           <folding />
         </state>
       </provider>
@@ -1594,107 +1761,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/authentication/rememberme/PersistentTokenRepository.class">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/static/css/hanger/hanger.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <marker date="1537264201399" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1537264201399" expanded="false" signature="182:549" ph="..." />
-            <marker date="1537264201399" expanded="true" signature="1901:1908" ph="{}" />
-            <marker date="1537264201399" expanded="true" signature="1939:2198" ph="{...}" />
-            <marker date="1537264201399" expanded="true" signature="2264:2425" ph="{...}" />
-            <marker date="1537264201399" expanded="true" signature="2504:2615" ph="{...}" />
-            <marker date="1537264201399" expanded="true" signature="2689:3740" ph="{...}" />
-            <marker date="1537264201399" expanded="false" signature="2813:2961" ph="mapRow(rs, rowNum) → {" />
-            <marker date="1537264201399" expanded="false" signature="3103:3122" ph="}" />
-            <marker date="1537264201399" expanded="true" signature="3792:3888" ph="{...}" />
-            <marker date="1537264201399" expanded="true" signature="3960:4025" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.12.RELEASE/spring-jdbc-4.3.12.RELEASE.jar!/org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <marker date="1523546682401" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523546682401" expanded="true" signature="261:268" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="44" />
+        <state relative-caret-position="229">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/javax/sql/DataSource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/static/js/hanger/hanger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        <state relative-caret-position="215">
+          <caret line="105" column="81" lean-forward="false" selection-start-line="105" selection-start-column="81" selection-end-line="105" selection-end-column="81" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/user/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="23" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="77" column="17" lean-forward="false" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sebaszczen/configuration/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

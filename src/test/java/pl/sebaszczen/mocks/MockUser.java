@@ -1,8 +1,8 @@
 package pl.sebaszczen.mocks;
 
 import org.springframework.stereotype.Service;
-import pl.sebaszczen.domain.User;
-import pl.sebaszczen.domain.UserDto;
+import pl.sebaszczen.domain.user.User;
+import pl.sebaszczen.domain.user.UserDto;
 
 @Service
 public class MockUser {

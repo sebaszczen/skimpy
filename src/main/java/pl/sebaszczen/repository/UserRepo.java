@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-import pl.sebaszczen.domain.User;
+import pl.sebaszczen.domain.user.User;
 
 public interface UserRepo extends JpaRepository<User,Long> {
     java.util.Optional<User> findByUserName(String name);

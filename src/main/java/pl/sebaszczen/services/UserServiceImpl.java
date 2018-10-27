@@ -5,8 +5,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import pl.sebaszczen.domain.User;
-import pl.sebaszczen.domain.UserDto;
+import pl.sebaszczen.domain.user.User;
+import pl.sebaszczen.domain.user.UserDto;
 import pl.sebaszczen.repository.UserRepo;
 
 import java.util.List;
@@ -45,6 +45,11 @@ public class UserServiceImpl implements UserService{
             userRepo.save(user);
             return user;
         }
+    }
+
+    @Override
+    public void updadeUser(User user) {
+        userRepo.save(user);
     }
 
     @Override

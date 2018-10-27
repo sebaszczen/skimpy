@@ -2,8 +2,8 @@ package pl.sebaszczen.facade;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.sebaszczen.domain.User;
-import pl.sebaszczen.domain.UserDto;
+import pl.sebaszczen.domain.user.User;
+import pl.sebaszczen.domain.user.UserDto;
 import pl.sebaszczen.services.EmailExistsException;
 import pl.sebaszczen.services.UserService;
 
@@ -36,5 +36,9 @@ public class UserFacade {
     public User findUserById (Long id) {
         User user = userService.findById(id);
         return user;
+    }
+
+    public void updateUser(User user) {
+        userService.updadeUser(user);
     }
 }

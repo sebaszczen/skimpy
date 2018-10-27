@@ -2,11 +2,11 @@ package pl.sebaszczen.facade;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.sebaszczen.domain.User;
-import pl.sebaszczen.domain.activateAccount.AccountActivateToken;
-import pl.sebaszczen.domain.resetPassword.Mail;
+import pl.sebaszczen.domain.user.User;
+import pl.sebaszczen.domain.token.AccountActivateToken;
+import pl.sebaszczen.domain.password.Mail;
 import pl.sebaszczen.repository.AccountActivateTokenRepository;
-import pl.sebaszczen.services.resetPAssword.EmailService;
+import pl.sebaszczen.services.EmailService;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
