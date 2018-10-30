@@ -5,7 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import pl.sebaszczen.domain.user.User;
 import pl.sebaszczen.repository.WeatherReposiory;
+
+import java.util.logging.Logger;
 
 /**
  * Hello world!
@@ -23,5 +26,4 @@ public class App
     {
         SpringApplication.run(App.class, args);
     }
-
 }

@@ -1,6 +1,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" th:href="@{/css/shop-homepage.css}"/>
+
+    <!--chart-->
+    <link href="css/chart/chart.css" rel="stylesheet" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript"  th:inline="javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -11,7 +19,7 @@
         var data = google.visualization.arrayToDataTable(d);
 
         var options = {
-          title: 'Temperature',
+          title: /*[[${city}]]*/,
           curveType: 'function',
           legend: { position: 'bottom' }
         };
@@ -23,7 +31,15 @@
     </script>
 </head>
 <body>
-<insert type="text"></insert><button>draw</button>
+
+<div th:replace="index :: copy"></div>
+
+<form id="show" method="get" action="/showchart">
+    Podaj nazwę miasta:<br/>
+    <input type="text" name="name" placeholder="city name"/>
+    <br/>
+    <button type="submit">Print Chart</button>
+</form>
 
 <div id="curve_chart" style="width: 900px; height: 500px"></div>
 </body>
