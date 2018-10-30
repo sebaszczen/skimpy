@@ -34,8 +34,13 @@ public class SaveUserController {
             return "save";
         }
         else {
-            emailFacade.activateToken(user,request);
-            return "redirect:/login?registerSuccess";
+            boolean success = emailFacade.activateToken(user, request);
+            if (success=false){
+                return "redirect:/login?registerFail";
+            }
+            else {
+                return "redirect:/login?registerSuccess";
+            }
         }
     }
 }

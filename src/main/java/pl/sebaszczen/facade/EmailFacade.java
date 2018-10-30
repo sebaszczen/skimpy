@@ -21,7 +21,7 @@ public class EmailFacade {
     @Autowired
     private EmailService emailService;
 
-    public void activateToken(User user, HttpServletRequest request) {
+    public boolean activateToken(User user, HttpServletRequest request) {
         AccountActivateToken token = new AccountActivateToken();
         token.setToken(UUID.randomUUID().toString());
         token.setUser(user);
@@ -40,6 +40,17 @@ public class EmailFacade {
         model.put("resetUrl", url + "/activate-account?token=" + token.getToken());
         model.put("templateHtml", "email/activate-account-email-template");
         mail.setModel(model);
-        emailService.sendEmail(mail);
+        boolean success;
+        do {
+            success = emailService.sendEmail(mail);
+            try {
+                Thread.sleep(30000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        while (!success);
+
+        return success;
     }
 }

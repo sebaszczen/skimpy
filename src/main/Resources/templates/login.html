@@ -32,6 +32,11 @@
                                     You've successfully registered! Go to email and activate your account!
                                 </div>
                             </div>
+                            <div th:if="${param.registerFail}">
+                                <div class="alert alert-info">
+                                    Sorry, somenthing went wrong. Try one more time!
+                                </div>
+                            </div>
                             <div th:if="${param.activateSuccess}">
                                 <div class="alert alert-info">
                                     You've successfully activated an account!
