@@ -28,19 +28,18 @@ public class SaveUserController {
             return "save";
         }
         User user = userFacade.createUserAccount(userDto);
-        if (user==null){
-            bindingResult.rejectValue("email", "message.regError","There is an account with that email address: "
+        if (user == null) {
+            bindingResult.rejectValue("email", "message.regError", "There is an account with that email address: "
                     + userDto.getEmail());
             return "save";
-        }
-        else {
+        } else {
             boolean success = emailFacade.activateToken(user, request);
-            if (success=false){
+            if (!success) {
                 return "redirect:/login?registerFail";
-            }
-            else {
+            } else {
                 return "redirect:/login?registerSuccess";
+//            }
             }
         }
     }
-}
+    }

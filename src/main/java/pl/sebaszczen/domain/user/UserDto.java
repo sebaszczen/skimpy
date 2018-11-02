@@ -32,9 +32,14 @@ public class UserDto {
     @NotEmpty
     @ValidEmail
     private String email;
-
     @AssertTrue
     private Boolean terms;
+    private Sex sex;
+
+    enum Sex{
+        WOMAN,MAN,NOTSURE;
+    }
+
 
     public UserDto(final Builder builder) {
         this.userName =builder.username;
@@ -44,9 +49,18 @@ public class UserDto {
         this.matchingPassword = builder.matchingPassword;
         this.email = builder.email;
         this.terms = builder.terms;
+        this.sex = builder.sex;
     }
 
     public UserDto() {
+    }
+
+    public Sex getSex() {
+        return sex;
+    }
+
+    public void setSex(Sex sex) {
+        this.sex = sex;
     }
 
     public Boolean getTerms() {
@@ -105,6 +119,7 @@ public class UserDto {
         this.password = password;
     }
 
+
     public static class Builder{
         private String username;
         private String lastName;
@@ -113,6 +128,11 @@ public class UserDto {
         private String matchingPassword;
         private String email;
         private Boolean terms;
+        private Sex sex;
+
+        public void setSex(Sex sex) {
+            this.sex = sex;
+        }
 
         public Builder setUsername(String username) {
             this.username = username;

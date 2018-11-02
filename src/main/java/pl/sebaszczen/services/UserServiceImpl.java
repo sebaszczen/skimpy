@@ -41,7 +41,8 @@ public class UserServiceImpl implements UserService{
         }
         else {
             User user = new User.Builder().setUsername(userDto.getUserName()).setLogin(userDto.getLogin())
-                    .setPassword(passwordEncoder.encode(userDto.getPassword())).setEmail(userDto.getEmail()).build();
+                    .setPassword(passwordEncoder.encode(userDto.getPassword())).setEmail(userDto.getEmail())
+                    .setSex(( userDto.getSex())).build();
             userRepo.save(user);
             return user;
         }

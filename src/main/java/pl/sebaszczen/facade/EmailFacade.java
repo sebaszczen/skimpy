@@ -1,6 +1,7 @@
 package pl.sebaszczen.facade;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import pl.sebaszczen.domain.user.User;
 import pl.sebaszczen.domain.token.AccountActivateToken;
@@ -40,16 +41,7 @@ public class EmailFacade {
         model.put("resetUrl", url + "/activate-account?token=" + token.getToken());
         model.put("templateHtml", "email/activate-account-email-template");
         mail.setModel(model);
-        boolean success;
-        do {
-            success = emailService.sendEmail(mail);
-            try {
-                Thread.sleep(30000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        while (!success);
+        boolean success= emailService.sendEmail(mail);
 
         return success;
     }

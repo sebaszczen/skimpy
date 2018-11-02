@@ -125,6 +125,16 @@
                                        th:text="${error}">Validation error</p>
                                 </div>
                                 <div class="form-group"
+                                     th:classappend="${#fields.hasErrors('sex')}? 'has-error':''">
+                                    <div class="input-group">
+                                            <select name="sex" th:field="*{sex}">
+                                                <option value="MAN">Man</option>
+                                                <option value="WOMAN">Woman</option>
+                                                <option value="NOTSURE">I am not Sure</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="form-group"
                                      th:classappend="${#fields.hasErrors('terms')}? 'has-error':''">
                                     <input id="terms"
                                            type="checkbox"
@@ -137,7 +147,7 @@
                                        th:text="${error}">Validation error</p>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-success btn-block">Register</button>
+                                    <button type="submit" clregisterSuccessregisterSuccessass="btn btn-success btn-block">Register</button>
                                 </div>
                             </form>
 
