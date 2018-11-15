@@ -41,8 +41,7 @@ public class EmailFacade {
         model.put("resetUrl", url + "/activate-account?token=" + token.getToken());
         model.put("templateHtml", "email/activate-account-email-template");
         mail.setModel(model);
-        boolean success= emailService.sendEmail(mail);
 
-        return success;
+        return emailService.sendEmail(mail);
     }
 }

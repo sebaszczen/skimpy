@@ -2,6 +2,7 @@ package pl.sebaszczen.controller.restController.userController;
 
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import pl.sebaszczen.domain.user.User;
@@ -26,6 +27,22 @@ public class UserController {
     })
     @GetMapping("/logged")
     public User getLoggedUser(Principal principal) {
+        User user = (User) ((Authentication) principal).getPrincipal();
+        return user;
+    }
+    @GetMapping(path = "/loggedXml",produces = {MediaType.APPLICATION_XML_VALUE})
+    public User getLoggedUserinXmlFormat(Principal principal) {
+        User user = (User) ((Authentication) principal).getPrincipal();
+        return user;
+    }
+
+    @GetMapping(path = "/loggedPdf",produces = {MediaType.APPLICATION_PDF_VALUE})
+    public User getLoggedUserinPdfFormat(Principal principal) {
+        User user = (User) ((Authentication) principal).getPrincipal();
+        return user;
+    }
+    @GetMapping(path = "/loggedText",produces = {MediaType.TEXT_PLAIN_VALUE})
+    public User getLoggedUserinTextFormat(Principal principal) {
         User user = (User) ((Authentication) principal).getPrincipal();
         return user;
     }

@@ -127,7 +127,10 @@
                                 <div class="form-group"
                                      th:classappend="${#fields.hasErrors('sex')}? 'has-error':''">
                                     <div class="input-group">
-                                            <select name="sex" th:field="*{sex}">
+                                        <span class="input-group-addon">
+                                            <img src="/images/sex.png" style="height:18px; width:18px"></img>
+                                        </span>
+                                            <select name="sex" th:field="*{sex}" class="form-control">
                                                 <option value="MAN">Man</option>
                                                 <option value="WOMAN">Woman</option>
                                                 <option value="NOTSURE">I am not Sure</option>

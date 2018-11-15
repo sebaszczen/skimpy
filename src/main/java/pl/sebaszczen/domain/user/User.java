@@ -31,13 +31,10 @@ public class User implements UserDetails {
             inverseJoinColumns = @JoinColumn(
                     name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
+    @Enumerated(EnumType.STRING)
     UserDto.Sex sex;
 
     public User() {
-    }
-
-    enum Sex{
-        WOMAN,MAN,NOTSURE;
     }
 
     private User(final Builder builder) {
@@ -45,10 +42,9 @@ public class User implements UserDetails {
         this.login=builder.login;
         this.password = builder.password;
         this.lastName = builder.lastName;
-        this.userName = builder.username;
         this.sex=builder.sex;
+        this.userName = builder.username;
     }
-
 
     private boolean isActive(){
         return active;

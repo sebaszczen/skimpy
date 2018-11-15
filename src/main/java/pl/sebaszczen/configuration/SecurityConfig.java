@@ -20,20 +20,21 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity //włączamy ustawienia bezpieczeństwa
-public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzany klasę o WebSecurityConfigurerAdapter
+class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzany klasę o WebSecurityConfigurerAdapter
     @Autowired
     private UserService userService;
     @Autowired
     private DataSource dataSource;
 
     @Bean
-    public PasswordEncoder passwordEncoder() {
+    PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     private String[] permitAll = {
             "/css/**", "/webjars/**", "/menu", "/registration", "/user/**", "/js/**"
-            , "/fonts/**", "/images/**", "/login/**", "/activate-account/**", "/sw", "/swagger-ui.html/**", "/user/**"
+            , "/fonts/**", "/images/**", "/login/**", "/activate-account/**", "/sw", "/swagger-ui.html/**"
+
             , "/v2/api-docs/**", "/configuration/ui/**", "/swagger-resources/**", "/configuration/security/**", "/swagger-ui.html/**", "/webjars/**"};//swagger
 
     //umozliwia konfiguracje uslug szczegolow uzytkownika
@@ -88,7 +89,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzan
     }
 
     @Bean
-    public PersistentTokenRepository persistentTokenRepository() {
+    PersistentTokenRepository persistentTokenRepository() {
         final JdbcTokenRepositoryImpl jdbcTokenRepository = new JdbcTokenRepositoryImpl();
         jdbcTokenRepository.setDataSource(dataSource);
         return jdbcTokenRepository;

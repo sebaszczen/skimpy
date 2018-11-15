@@ -37,7 +37,7 @@ public class UserDto {
     private Sex sex;
 
     enum Sex{
-        WOMAN,MAN,NOTSURE;
+        WOMAN,MAN,NOTSURE
     }
 
 
