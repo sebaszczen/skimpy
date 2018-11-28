@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
@@ -16,11 +17,13 @@ import org.springframework.security.web.authentication.rememberme.JdbcTokenRepos
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 import pl.sebaszczen.services.UserService;
 
+import javax.servlet.http.HttpSessionEvent;
+import javax.servlet.http.HttpSessionListener;
 import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity //włączamy ustawienia bezpieczeństwa
-class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzany klasę o WebSecurityConfigurerAdapter
+class SecurityConfig extends WebSecurityConfigurerAdapter implements HttpSessionListener {  //rozszerzany klasę o WebSecurityConfigurerAdapter
     @Autowired
     private UserService userService;
     @Autowired
@@ -68,7 +71,11 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzany klas�
                 .successHandler(loginSuccessHandler()).failureHandler(authenticationFailureHandler())
                 //po logowaniu sa dwa wyjscia-udalo sie zalogowac lub nie tutaj nastepuje obsluga tych dwoch wydarzen
                 .and().logout().permitAll()
-                .and().rememberMe().tokenRepository(persistentTokenRepository());
+                .and().rememberMe().tokenRepository(persistentTokenRepository())
+        ;
+
+        http.sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED);
     }
 
     private AuthenticationFailureHandler authenticationFailureHandler() {
@@ -93,5 +100,18 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {  //rozszerzany klas�
         final JdbcTokenRepositoryImpl jdbcTokenRepository = new JdbcTokenRepositoryImpl();
         jdbcTokenRepository.setDataSource(dataSource);
         return jdbcTokenRepository;
+    }
+
+    @Override
+    public void sessionCreated(HttpSessionEvent httpSessionEvent) {
+        System.out.println("==== Session is created ====");
+        System.out.println(httpSessionEvent.getSession().getMaxInactiveInterval());
+        httpSessionEvent.getSession().setMaxInactiveInterval(1);
+        System.out.println(httpSessionEvent.getSession().getMaxInactiveInterval());
+    }
+
+    @Override
+    public void sessionDestroyed(HttpSessionEvent httpSessionEvent) {
+        System.out.println("==== Session is destroyed ====");
     }
 }

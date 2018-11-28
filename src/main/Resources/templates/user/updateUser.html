@@ -32,7 +32,7 @@
     </div>
 </nav>
 
-<form th:action="@{/user/updated}" th:object="${user}" method="post">
+<form th:action="@{/user/updated}" method="post">
     <table class="table">
 
         <thead>
@@ -41,6 +41,7 @@
             <th scope="col">Last Name</th>
             <th scope="col">Login</th>
             <th scope="col">Email</th>
+            <th scope="col">Color</th>
         </tr>
         </thead>
         <tbody>
@@ -59,7 +60,13 @@
                 <input type="text" th:field="${user.email}"/>
             </td>
             <td>
+                <input type="text" th:value="${color}" th:name="x"/>
+            </td>
+            <td>
                 <input type="hidden" th:field="${user.active}"/>
+            </td>
+            <td>
+                <input type="hidden" th:field="${user.password}"/>
             </td>
             <td>
                 <input type="hidden" th:field="${user.id}"/>
@@ -69,6 +76,5 @@
     </table>
     <button type="submit">Submit</button>
 </form>
-
 </body>
 </html>
