@@ -2,18 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39fa7122-c913-426a-bcd7-f81489830ac0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/data.sql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/invalid-password-list.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/messages_pl_PL.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/configuration/ConsolerData.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/configuration/SecurityConfig.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/configuration/SwaggerConfig.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/RedirectSwagger.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/restController/userController/UserController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/MenuController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/chartController/SaveData.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/chartController/ShowChart.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/hanger/hanger.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/passwordController/PasswordForgotController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/passwordController/PasswordResetController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/user/ActivateUserAccountController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/user/DaleteUserController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/user/DisplayUserSettingsController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/user/SaveUserController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/controller/thymeleafConroller/user/UpdateUser.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/AlienRequestScope.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/InactiveException.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/password/Mail.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/password/PasswordForgotDto.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/password/PasswordResetDto.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/password/PasswordResetToken.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/token/AccountActivateToken.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/user/Role.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/user/User$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/user/User$Builder.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/user/User.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/user/UserDto$Builder.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/user/UserDto$Sex.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/user/UserDto.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/domain/weather/WeatherStation.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/facade/EmailFacade.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/facade/UserFacade.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/repository/AccountActivateTokenRepository.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/repository/PasswordResetTokenRepository.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/repository/WeatherReposiory.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/EmailValidator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/LoginExist.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/LoginValidator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/PasswordMatches.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/PasswordMatchesValidator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/PasswordResetMatches.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/PasswordResetMatchesValidator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/PasswordStrength.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/PasswordStrengthValidator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/security/validation/ValidEmail.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/services/EmailExistsException.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/services/EmailService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/services/LoginExistException.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/css/chart/chart.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/css/hanger/hanger.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/css/shop-homepage.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s0.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/s9.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/images/sex.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.bundle.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/js/hanger/hanger.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/Menu.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/chart.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/email.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/email/activate-account-email-template.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/email/email-template.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/forgot-password.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/game/hanger.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/logged.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/css/shop-homepage.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/gulpfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/css/bootstrap-grid.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/css/bootstrap-grid.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/css/bootstrap-reboot.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/css/bootstrap-reboot.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/css/bootstrap.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/css/bootstrap.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/js/bootstrap.bundle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/js/bootstrap.bundle.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/js/bootstrap.bundle.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/js/bootstrap.bundle.min.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/js/bootstrap.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/bootstrap/js/bootstrap.min.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/jquery/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/jquery/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/jquery/jquery.min.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/jquery/jquery.slim.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/jquery/jquery.slim.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/menu/vendor/jquery/jquery.slim.min.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/reset-password.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/user/settings.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/templates/user/updateUser.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/pl/sebaszczen/controllerTest/GlobalErrorsMatchers.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/pl/sebaszczen/controllerTest/UserRegistrationTest.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/pl/sebaszczen/mocks/MockUser.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/pl/sebaszczen/mocks/MockUserDto.class" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/skimpy.iml" afterPath="$PROJECT_DIR$/skimpy.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/Resources/application.properties" afterPath="$PROJECT_DIR$/src/main/Resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/App.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/App.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/chartController/SaveData.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/controller/thymeleafConroller/chartController/SaveData.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pl/sebaszczen/services/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/App.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/App.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sebaszczen/services/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/pl/sebaszczen/services/UserServiceImpl.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1061,7 +1169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543418211573</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="update">
+      <created>1561714897610</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1561714897610</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
