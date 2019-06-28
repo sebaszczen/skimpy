@@ -3,6 +3,8 @@ package pl.sebaszczen.controller.thymeleafConroller.chartController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.ResourceAccessException;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 import pl.sebaszczen.domain.weather.WeatherStation;
 import pl.sebaszczen.repository.WeatherReposiory;
@@ -23,12 +25,19 @@ public class SaveData {
     public void saveData() {
         RestTemplate restTemplate = new RestTemplate();
         String url = "https://danepubliczne.imgw.pl/api/data/synop";
-        WeatherStation[] forObject = restTemplate.getForObject(url, WeatherStation[].class);
+        WeatherStation[] forObject = new WeatherStation[0];
+        try {
+            forObject = restTemplate.getForObject(url, WeatherStation[].class);
+
         System.out.println(forObject[1].getHour());
         if (!weatherReposiory.existsByHour(forObject[1].getHour())) {
             for (WeatherStation weatherStation : forObject) {
                 weatherReposiory.save(weatherStation);
             }
+        }
+        } catch (ResourceAccessException e) {
+            e.printStackTrace();
+            logger.info("probably no internet");
         }
     }
 

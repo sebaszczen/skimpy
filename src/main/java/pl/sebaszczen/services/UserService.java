@@ -1,5 +1,6 @@
 package pl.sebaszczen.services;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import pl.sebaszczen.domain.user.User;
 import pl.sebaszczen.domain.user.UserDto;

@@ -27,8 +27,11 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="124d20ae-69da-4135-bf48-1a2d5fec38fb">
-      <console name="Connection" type="STANDARD" />
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
+  </component>
+  <component name="DBNavigator.Project.DatabaseFileManager">
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="124d20ae-69da-4135-bf48-1a2d5fec38fb" />
@@ -75,10 +78,9 @@
           <host value="localhost" />
           <port value="3306" />
           <database value="mysql" />
-          <os-authentication value="false" />
-          <empty-password value="false" />
+          <type value="USER_PASSWORD" />
           <user value="root" />
-          <password value="dGFqbmU=" />
+          <deprecated-pwd value="dGFqbmU=" />
         </database>
         <properties>
           <auto-commit value="false" />
@@ -88,11 +90,17 @@
           <proxy-host value="" />
           <proxy-port value="22" />
           <proxy-user value="" />
-          <proxy-password value="" />
+          <deprecated-proxy-pwd value="" />
           <auth-type value="PASSWORD" />
           <key-file value="" />
           <key-passphrase value="" />
         </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
         <details>
           <charset value="UTF-8" />
           <session-management value="true" />
@@ -104,11 +112,11 @@
           <environment-type value="default" />
           <idle-time-to-disconnect value="30" />
           <idle-time-to-disconnect-pool value="5" />
-          <password-expiry-time value="10" />
+          <credential-expiry-time value="10" />
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false">
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
           <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
@@ -243,11 +251,11 @@
         <data-length-threshold value="100" />
         <popup-delay value="1000" />
       </text-editor-popup>
-      <values-list-popup>
+      <values-actions-popup>
         <show-popup-button value="true" />
         <element-count-threshold value="1000" />
         <data-length-threshold value="250" />
-      </values-list-popup>
+      </values-actions-popup>
       <general>
         <fetch-block-size value="100" />
         <fetch-timeout value="30" />

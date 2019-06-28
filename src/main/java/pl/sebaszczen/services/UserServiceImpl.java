@@ -1,6 +1,7 @@
 package pl.sebaszczen.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -10,6 +11,7 @@ import pl.sebaszczen.domain.user.UserDto;
 import pl.sebaszczen.repository.UserRepo;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -61,6 +63,12 @@ public class UserServiceImpl implements UserService{
     private boolean loginExisst(String login) {
         User user = findByLogin(login);
         return user != null;
+    }
+
+    @Cacheable
+    public void calculate(int x) {
+        double sqrt = Math.sqrt(Math.pow(x, 23) * Math.sqrt(x * 234)*100000);
+        System.out.println(sqrt);
     }
 
     private boolean emailExist(String email) {
